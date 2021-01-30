@@ -1,0 +1,549 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    {% include 'links.html' %}
+</head>
+<body>
+<header class="header_inner become_a_teacher">
+<!-- Preloader -->
+{% include 'header.html' %}
+
+    <div class="intro_wrapper">
+        <div class="container">
+            <div class="row">
+                 <div class="col-sm-12 col-md-8 col-lg-8">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header> <!-- End header -->
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<section class="cources_highlight">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="latest_blog_carousel">
+                     <div class="single_item single_item_first">
+                        <div class="blog-img">
+                            <a href="#"><img src="{% static 'images/features/training_team.jpg' %}" alt="" class="img-fluid" style="height:280px;"></a>
+                        </div>
+                        <div class="blog_title">
+                            <span>Get Trained by</span>
+                            <h3><a href="#" title="">Our Skilled Team</a></h3>
+                            <p>You will be trained by our skilled experts who have a great experience of working in the real world and get</p><strong>"100% placement"</strong>
+                        </div>
+                    </div>
+
+                    <div class="single_item single_item_center">
+                        <div class="blog-img">
+                            <a href="#" title=""><img src="{% static 'images/features/features_2.jpg' %}" alt="" class="img-fluid"></a>
+                        </div>
+                        <div class="blog_title">
+                            <span>Work On</span>
+                            <h3><a href="#" title="">Live Projects</a></h3>
+                            <p>
+Working on a real project is a big thing in today's world. The training institute will never give you the experience to work on a live project, but we are an IT comapny, so we will give you that experience.</p>
+                        </div>
+                    </div>
+
+                   <div class="single_item single_item_last">
+                        <div class="blog-img">
+                            <a href="#" title=""><img src="{% static 'images/features/one_to_one.jpg' %}" alt="" class="img-fluid" style="height:280px;"></a>
+                        </div>
+                        <div class="blog_title">
+                            <span>Get Industrial</span>
+                            <h3><a href="#" title="">One to one Training</a></h3>
+                            <p>We will not teach you to keep it with many students. We give you one to one training, so you can understand freely and you will get </p><strong>"Life Time Free Validity"</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="login_signup_option">
+    <div class="l-modal is-hidden--off-flow js-modal-shopify">
+        <div class="l-modal__shadow js-modal-hide"></div>
+        <div class="login_popup login_modal_body">
+            <div class="Popup_title d-flex justify-content-between">
+                <h2 class="hidden">&nbsp;</h2>
+                <!-- Nav tabs -->
+                <div class="row">
+                    <div class="col-12 col-lg-12 col-md-12 col-lg-12 login_option_btn">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#login" role="tab">Login</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#panel2" role="tab">Register</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                        <!-- Tab panels -->
+                        <div class="tab-content card">
+                            <!--Login-->
+                            <div class="tab-pane fade in show active" id="login" role="tabpanel">
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Email</label>
+                                                <input type="email" class="form-control" placeholder="Username">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Password</label>
+                                                <input type="password" class="form-control" placeholder="Password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12 d-flex justify-content-between login_option">
+                                            <a href="forgot-password.html" title="" class="forget_pass">Forget Password ?</a>
+                                            <button type="submit" class="btn btn-default login_btn">Login</button>
+                                        </div>
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                                            <div class="social_login">
+                                                <div class="social_items">
+                                                    <button class="google_login google">Login Google</button>
+                                                    <button class="google_login facebook">Login Facebook</button>
+                                                    <button class="google_login twitter">Login Twitter</button>
+                                                    <button class="google_login linkdin">Login Linkdin</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--/.Panel 1-->
+                            <!--Panel 2-->
+                            <div class="tab-pane fade" id="panel2" role="tabpanel">
+                                <form action="#" class="register">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                <label  class="control-label">Name</label>
+                                                <input type="text" class="form-control" placeholder="Username">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                <label  class="control-label">Email</label>
+                                                <input type="email" class="form-control" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                <label  class="control-label">Password</label>
+                                                <input type="password" class="form-control" placeholder="Password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12 d-flex justify-content-between login_option">
+                                            <button type="submit" class="btn btn-default login_btn">Register</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div><!--/.Panel 2-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  <!-- End Login Signup Option -->
+
+
+
+
+<section class="unlimited_possibilities">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="sub_title">
+                    <h2>Unlimited Possibilities</h2>
+                </div><!-- ends: .section-header -->
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                 <div class="single_item single_item_first">
+                    <div class="icon_wrapper">
+                        <i class="flaticon-student"></i>
+                    </div>
+                    <div class="blog_title">
+                        <h3><a href="#" title="">Schedule Demo</a></h3>
+                        <p>You can schedule your demo lecture with our expert trainer at any time. We are available for 24x7 support.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="single_item single_item_center">
+                    <div class="icon_wrapper">
+                        <i class="flaticon-university"></i>
+                    </div>
+                    <div class="blog_title">
+                        <h3><a href="#" title="">Our Mission</a></h3>
+                        <p>Our mission is to give best training to our students, so they can get job easily and shine in thier career.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+               <div class="single_item single_item_last">
+                <div class="icon_wrapper">
+                        <i class="flaticon-diploma"></i>
+                    </div>
+                    <div class="blog_title">
+                        <h3><a href="#" title="">Multiple Course</a></h3>
+                        <p>We have multiple courses in latest technologies, so you can choose your course according to your interest and requirement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End Unlimited Possibilities -->
+
+
+
+<section class="learn_shep">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                <div class="title">
+                    <h2>Live Training</h2>
+                    <p>Live sessions you can understand each and every content very easily. Communications between our trainers and you become very clear. You will be able to learn with trainers live and interact with them gives you a chance to learn not only the technical things but also interpersonal skills. This is lead to better success. In live sessions you can solve your doubts quickly and clear them. This is not available in recorded sessions. Live session can make you aware about the real time requirements of industry. It can increase your satisfaction rate and you can ask trainer about you confusion, so they can make you understand easily.</p>
+                    <a href="#" title="">Schedule Demo</a>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7 ml-auto p-0">
+                <div class="shep_banner_wrapper">
+                    <div class="step_single_banner">
+                        <img src="{% static 'images/features/features_2_1.jpg' %}" alt="" class="img-fluid">
+                        <img src="{% static 'images/features/features_2_2.jpg' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="step_single_banner">
+                        <img src="{% static 'images/features/features_2_3.jpg' %}" alt="" class="img-fluid">
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="popular_courses">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="sub_title">
+                    <h2>Related Courses</h2>
+                </div><!-- ends: .section-header -->
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="single-courses">
+                    <div class="courses_banner_wrapper">
+                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co1.png' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
+                    </div>
+                    <div class="courses_info_wrapper">
+                        <div class="courses_title">
+                            <h3><a href="#">C/C++</a></h3>
+                        </div>
+                        <div class="courses_info">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-user"></i>30 Days</li>
+                            </ul>
+                            <a href="#" class="cart_btn">Register here</a>
+                        </div>
+                    </div>
+                </div><!-- Ends: .single courses -->
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="single-courses">
+                    <div class="courses_banner_wrapper">
+                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co2.jpg' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
+                    </div>
+                    <div class="courses_info_wrapper">
+                        <div class="courses_title">
+                            <h3><a href="#">PHP</a></h3>
+                        </div>
+                        <div class="courses_info">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-user"></i>180 Days</li>
+                            </ul>
+                            <a href="#" class="cart_btn">Register here</a>
+                        </div>
+                    </div>
+                </div><!-- Ends: .single courses -->
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="single-courses">
+                    <div class="courses_banner_wrapper">
+                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co3.jpg' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
+                    </div>
+                    <div class="courses_info_wrapper">
+                        <div class="courses_title">
+                            <h3><a href="#">ASP .NET</a></h3>
+                        </div>
+                        <div class="courses_info">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-user"></i>180 Days</li>
+                            </ul>
+                            <a href="#" class="cart_btn">Register here</a>
+                        </div>
+                    </div>
+                </div><!-- Ends: .single courses -->
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="single-courses">
+                    <div class="courses_banner_wrapper">
+                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co4.jpg' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
+                    </div>
+                    <div class="courses_info_wrapper">
+                        <div class="courses_title">
+                            <h3><a href="#">Python</a></h3>
+                        </div>
+                        <div class="courses_info">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-user"></i>180 Days</li>
+                            </ul>
+                            <a href="#" class="cart_btn">Register here</a>
+                        </div>
+                    </div>
+                </div><!-- Ends: .single courses -->
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="single-courses">
+                    <div class="courses_banner_wrapper">
+                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co5.jpg' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
+                    </div>
+                    <div class="courses_info_wrapper">
+                        <div class="courses_title">
+                            <h3><a href="#">JAVA</a></h3>
+                        </div>
+                        <div class="courses_info">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-user"></i>180 Days</li>
+                            </ul>
+                            <a href="#" class="cart_btn">Register here</a>
+                        </div>
+                    </div>
+                </div><!-- Ends: .single courses -->
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="single-courses">
+                    <div class="courses_banner_wrapper">
+                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co6.png' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
+                    </div>
+                    <div class="courses_info_wrapper">
+                        <div class="courses_title">
+                            <h3><a href="#">SEO & DIGITAL MARKETING</a></h3>
+                        </div>
+                        <div class="courses_info">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-user"></i>180 Days</li>
+                            </ul>
+                            <a href="#" class="cart_btn">Register here</a>
+                        </div>
+                    </div>
+                </div><!-- Ends: .single courses -->
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="single-courses">
+                    <div class="courses_banner_wrapper">
+                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co7.jpg' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
+                    </div>
+                    <div class="courses_info_wrapper">
+                        <div class="courses_title">
+                            <h3><a href="#">UI/UX</a></h3>
+                        </div>
+                        <div class="courses_info">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-user"></i>180 Days</li>
+                            </ul>
+                            <a href="#" class="cart_btn">Register here</a>
+                        </div>
+                    </div>
+                </div><!-- Ends: .single courses -->
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="single-courses">
+                    <div class="courses_banner_wrapper">
+                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co8.jpg' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
+                    </div>
+                    <div class="courses_info_wrapper">
+                        <div class="courses_title">
+                            <h3><a href="#">WEB DESIGNING</a></h3>
+                        </div>
+                        <div class="courses_info">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-user"></i>180 Days</li>
+                            </ul>
+                            <a href="#" class="cart_btn">Register here</a>
+                        </div>
+                    </div>
+                </div><!-- Ends: .single courses -->
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="single-courses">
+                    <div class="courses_banner_wrapper">
+                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co9.png' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
+                    </div>
+                    <div class="courses_info_wrapper">
+                        <div class="courses_title">
+                            <h3><a href="#">SOFTWARE TESTING</a></h3>
+                        </div>
+                        <div class="courses_info">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-user"></i>180 Days</li>
+                            </ul>
+                            <a href="#" class="cart_btn">Register here</a>
+                        </div>
+                    </div>
+                </div><!-- Ends: .single courses -->
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="single-courses">
+                    <div class="courses_banner_wrapper">
+                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co10.jpg' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
+                    </div>
+                    <div class="courses_info_wrapper">
+                        <div class="courses_title">
+                            <h3><a href="#">RUBY ON RAILS</a></h3>
+                        </div>
+                        <div class="courses_info">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-user"></i>180 Days</li>
+                            </ul>
+                            <a href="#" class="cart_btn">Register here</a>
+                        </div>
+                    </div>
+                </div><!-- Ends: .single courses -->
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="single-courses">
+                    <div class="courses_banner_wrapper">
+                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co11.png' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
+                    </div>
+                    <div class="courses_info_wrapper">
+                        <div class="courses_title">
+                            <h3><a href="#">ANGULAR JS</a></h3>
+                        </div>
+                        <div class="courses_info">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-user"></i>30 Days</li>
+                            </ul>
+                            <a href="#" class="cart_btn">Register here</a>
+                        </div>
+                    </div>
+                </div><!-- Ends: .single courses -->
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="single-courses">
+                    <div class="courses_banner_wrapper">
+                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co12.png' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
+                    </div>
+                    <div class="courses_info_wrapper">
+                        <div class="courses_title">
+                            <h3><a href="#">ORACLE/MYSQL</a></h3>
+                        </div>
+                        <div class="courses_info">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-user"></i>180 Days</li>
+                            </ul>
+                            <a href="#" class="cart_btn">Register here</a>
+                        </div>
+                    </div>
+                </div><!-- Ends: .single courses -->
+            </div>
+            <!-- Ends: . -->
+
+             <div class="pagination_blog">
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li class="current"><a href="#">2</a></li>
+                    <li><a href="#" class=""><i class='flaticon-right-arrow'></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+{% include 'footer.html' %}<!-- End Footer -->
+
+<section id="scroll-top" class="scroll-top">
+    <h2 class="disabled">Scroll to top</h2>
+    <div class="to-top pos-rtive">
+        <a href="#"><i class = "flaticon-right-arrow"></i></a>
+    </div>
+</section>
+
+    <!-- JavaScript -->
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <script src="{% static 'js/jquery.meanmenu.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <!-- Counter Script -->
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+
+    <!-- =========================================================
+         STYLE SWITCHER | ONLY FOR DEMO NOT INCLUDED IN MAIN FILES
+    ============================================================== -->
+    <script type="text/javascript" src="js/demo.js"></script>
+    <div class="demo-style-switch" id="switch-style">
+        <a id="toggle-switcher" class="switch-button" title="Change Styles"><span class="fa fa-cog fa-spin"></span></a>
+        <div class="switched-options">
+            <div class="config-title">
+                <a class="navbar-brand" href="index-2.html"><img src="images/logo.png" alt="logo"></a>
+                <p>Education Template</p>
+
+            </div>
+            <div class="demos">
+                <div><a href="index-2.html" data-toggle="tooltip" data-placement="top" title="Home Style One"><img class="main-image img-fluid" src="demo/index_1.png" alt=""/></a></div>
+                <div><a href="index-3.html" data-toggle="tooltip" data-placement="top" title="Home Style Two"><img class="main-image img-fluid" src="demo/index_2.png" alt=""/></a></div>
+                <div><a href="index-4.html" data-toggle="tooltip" data-placement="top" title="Home Style Three"><img class="main-image img-fluid" src="demo/index_3.png" alt=""/></a></div>
+                <ul class="list-unstyled clearfix">
+                    <li><a href="about.html" data-toggle="tooltip" data-placement="top" title="About Page"><img src="demo/about.png" alt="" class="img-fluid"></a></li>
+                    <li><a href="blog.html" data-toggle="tooltip" data-placement="top" title="Blog Page"><img src="demo/blog.png" alt="" class="img-fluid"></a></li>
+                    <li><a href="blog-details.html" data-toggle="tooltip" data-placement="top" title="Blog Details Page"><img src="demo/blog_details.png" alt="" class="img-fluid"></a></li>
+                    <li><a href="event.html" data-toggle="tooltip" data-placement="top" title="Event Page"><img src="demo/event.png" alt="" class="img-fluid"></a></li>
+                    <li><a href="event-details.html" data-toggle="tooltip" data-placement="top" title="Event Deiails"><img src="demo/event_details.png" alt="" class="img-fluid"></a></li>
+                    <li><a href="teacher-profile.html" data-toggle="tooltip" data-placement="top" title="Teacher Profile"><img src="demo/teacher_pro.png" alt="" class="img-fluid"></a></li>
+                    <li><a href="course.html" data-toggle="tooltip" data-placement="top" title="Courses Page"><img src="demo/course.png" alt="" class="img-fluid"></a></li>
+                    <li><a href="course-details.html" data-toggle="tooltip" data-placement="top" title="Courses Details"><img src="demo/course_details.png" alt="" class="img-fluid"></a></li>
+                    <li><a href="team.html" data-toggle="tooltip" data-placement="top" title="Team Page"><img src="demo/team.png" alt="" class="img-fluid"></a></li>
+                    <li><a href="contact.html" data-toggle="tooltip" data-placement="top" title="Contact Page"><img src="demo/contact.png" alt="" class="img-fluid"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
