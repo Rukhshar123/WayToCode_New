@@ -13,3 +13,15 @@ def liveTraining(request):
 def collegeInternship(request):
     return render(request,'college_internship.html')
 
+def collegeProject(request):
+    return render(request,'college_project.html')
+
+def industrialTraining(request):
+    return render(request,'industrial_training.html')
+
+def onlineTraining(request):
+    return render(request,'online_training.html')
+
+def joborientedTraining(request):
+    return render(request,'online_training.html')
+

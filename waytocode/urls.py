@@ -25,5 +25,9 @@ urlpatterns = [
     path('about',training.about,name="about"),
     path('livetraining',training.liveTraining,name="livetraining"),
     path('collegeinternship',training.collegeInternship,name="collegeinternship"),
+    path('collegeproject',training.collegeProject,name="collegeproject"),
+    path('industrialtraining',training.industrialTraining,name="industrialtraining"),
+    path('onlinetraining',training.onlineTraining,name="onlinetraining"),
+    path('joboriented',training.joborientedTraining,name="joboriented"),
 
 ]
