@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+
+<!-- Mirrored from webhunt.store/themeforest/examin/index-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Jan 2021 16:03:49 GMT -->
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Examin - Education and LMS Template">
+
+    <!-- ========== Page Title ========== -->
+    <title>Way to Code </title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="{% static 'assets/img/icon.png' %}" type="{% static 'image/x-icon' %}">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/flaticon-set.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/owl.carousel.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/owl.theme.default.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/animate.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/bootsnav.css' %}" rel="stylesheet" />
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="{% static 'assets/js/html5/html5shiv.min.js' %}"></script>
+      <script src="{% static 'assets/js/html5/respond.min.js' %}"></script>
+    <![endif]-->
+
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Start Header Top
+    ============================================= -->
+    {% include 'preheader.html' %}
+    <!-- End Header Top -->
+
+    <!-- Header
+    ============================================= -->
+    {% include 'web_header.html' %}
+    <!-- End Header -->
+
+
+    <!-- Start Banner
+    ============================================= -->
+    <div class="banner-area content-top-heading less-paragraph text-normal">
+        {% block banner%}
+        <!-- Inherit banner code -->
+        {% endblock banner%}
+    </div>
+    <!-- End Banner -->
+
+    <!-- Start About
+    ============================================= -->
+    <div class="about-area default-padding">
+       {% block about%}
+        <!-- Inherit banner code -->
+        {% endblock about%}
+    </div>
+    <!-- End About -->
+
+    <!-- Start Popular Courses
+    ============================================= -->
+    <div class="popular-courses circle bg-gray carousel-shadow default-padding">
+        {% block technology %}
+        <!-- Inherit feature code -->
+        {% endblock technology %}
+    </div>
+    <!-- End Popular Courses -->
+
+    <!-- Start Top Categories
+    ============================================= -->
+    <div id="top-categories" class="top-cat-area default-padding bottom-less">
+        {% block categories %}
+        <!-- Inherit categories code -->
+        {% endblock categories %}
+    </div>
+    <!-- End Top Categories -->
+
+
+    <!-- Start Fun Factor
+    ============================================= -->
+    <div class="fun-factor-area default-padding bottom-less text-center bg-fixed shadow dark-hard" style="background-image: url({% static 'assets/img/banner/2.jpg' %});">
+       {% block funfactor %}
+        <!-- Inherit categories code -->
+        {% endblock funfactor %}
+    </div>
+    <!-- End Fun Factor -->
+
+
+
+    <!-- Start Testimonials
+    ============================================= -->
+    <div class="testimonials-area carousel-shadow default-padding bg-dark text-light">
+      {% block reviews %}
+        <!-- Inherit categories code -->
+        {% endblock reviews %}
+    </div>
+    <!-- End Testimonials -->
+
+
+    <!-- Start Footer
+    ============================================= -->
+{% include 'web_footer.html' %}
+    <!-- End Footer -->
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="{% static 'assets/js/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/equal-height.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.appear.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/modernizr.custom.13711.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/count-to.js' %}"></script>
+    <script src="{% static 'assets/js/loopcounter.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootsnav.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+<!-- Mirrored from webhunt.store/themeforest/examin/index-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Jan 2021 16:05:49 GMT -->
+</html>

@@ -25,3 +25,6 @@ def onlineTraining(request):
 def joborientedTraining(request):
     return render(request,'online_training.html')
 
+def contact(request):
+    return render(request, 'contact.html')
+

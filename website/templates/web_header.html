@@ -1,0 +1,98 @@
+{% load static %}
+<header id="home">
+
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default navbar-sticky bootsnav">
+
+            <!-- Start Top Search -->
+            <div class="container">
+                <div class="row">
+                    <div class="top-search">
+                        <div class="input-group">
+                            <form action="#">
+                                <input type="text" name="text" class="form-control" placeholder="Search">
+                                <button type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Search -->
+
+            <div class="container">
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav">
+                    <ul>
+                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </div>
+                <!-- End Atribute Navigation -->
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="{% static 'assets/img/logo.png' %}" class="logo" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
+                         <li>
+                            <a href="{% url 'webindex' %}">Home</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'about' %}">About Us</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="{% url 'webdevelopment' %}" class="dropdown-toggle active" data-toggle="dropdown" >Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'webdevelopment' %} ">Web Development</a></li>
+                                <li><a href="{% url 'appdevelopment' %}">App Development</a></li>
+                                <li><a href="{% url 'webdesigning' %}">Design Services</a></li>
+                                <li><a href="{% url 'digitalmarketing' %}">Digital Marketing</a></li>
+                                <li><a href="{% url 'testing' %}">QA & Testing</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Technologies</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="teachers.html">Python</a></li>
+                                <li><a href="teachers-details.html">Asp .Net</a></li>
+                                <li><a href="teachers-details.html">Java</a></li>
+                                <li><a href="teachers-details.html">PHP</a></li>
+                                <li><a href="teachers-details.html">Android</a></li>
+                                <li><a href="teachers-details.html">IOS</a></li>
+                                <li><a href="teachers-details.html">Angular JS</a></li>
+                                <li><a href="teachers-details.html">Node JS</a></li>
+                                <li><a href="teachers-details.html">React JS</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="{% url 'index' %}">Training</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'portfolio' %}">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="">Career</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">contact</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+
+        </nav>
+        <!-- End Navigation -->
+
+    </header>

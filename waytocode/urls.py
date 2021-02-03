@@ -20,14 +20,24 @@ from website import views as web
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',training.index,name="index"),
-    path('about',training.about,name="about"),
-    path('about',training.about,name="about"),
+    path('',web.webindex,name="webindex"),
+    path('about',web.webabout,name="about"),
+    path('webdevelopment',web.webDevelopment,name="webdevelopment"),
+    path('appdevelopment',web.appDevelopment,name="appdevelopment"),
+    path('webdesigning',web.webDesigning,name="webdesigning"),
+    path('digitalmarketing',web.digitalMarketing,name="digitalmarketing"),
+    path('testing',web.testing,name="testing"),
+    path('portfolio',web.portfolio,name="portfolio"),
+
+    #Training URLs
+    path('index',training.index,name="index"),
+    path('about_training',training.about,name="about_training"),
     path('livetraining',training.liveTraining,name="livetraining"),
     path('collegeinternship',training.collegeInternship,name="collegeinternship"),
     path('collegeproject',training.collegeProject,name="collegeproject"),
     path('industrialtraining',training.industrialTraining,name="industrialtraining"),
     path('onlinetraining',training.onlineTraining,name="onlinetraining"),
     path('joboriented',training.joborientedTraining,name="joboriented"),
+    path('contact',training.contact,name="contact"),
 
 ]
