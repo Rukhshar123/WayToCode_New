@@ -28,3 +28,6 @@ def joborientedTraining(request):
 def contact(request):
     return render(request, 'contact.html')
 
+def blogs(request):
+    return render(request, 'blogs.html')
+

@@ -48,8 +48,14 @@
                          <li>
                             <a href="{% url 'webindex' %}">Home</a>
                         </li>
-                        <li>
-                            <a href="{% url 'about' %}">About Us</a>
+                        <li class="dropdown">
+                            <a href="{% url 'webdevelopment' %}" class="dropdown-toggle active" data-toggle="dropdown" >Company</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'about' %} ">About us</a></li>
+                                <li><a href="{% url 'ceo' %}">CEO & Founder</a></li>
+                                <li><a href="{% url 'webdesigning' %}">Way to Code gallary</a></li>
+                                <li><a href="{% url 'career' %}">Career</a></li>
+                            </ul>
                         </li>
                         <li class="dropdown">
                             <a href="{% url 'webdevelopment' %}" class="dropdown-toggle active" data-toggle="dropdown" >Services</a>
@@ -64,15 +70,17 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Technologies</a>
                             <ul class="dropdown-menu">
-                                <li><a href="teachers.html">Python</a></li>
-                                <li><a href="teachers-details.html">Asp .Net</a></li>
-                                <li><a href="teachers-details.html">Java</a></li>
-                                <li><a href="teachers-details.html">PHP</a></li>
-                                <li><a href="teachers-details.html">Android</a></li>
-                                <li><a href="teachers-details.html">IOS</a></li>
-                                <li><a href="teachers-details.html">Angular JS</a></li>
-                                <li><a href="teachers-details.html">Node JS</a></li>
-                                <li><a href="teachers-details.html">React JS</a></li>
+                                <li><a href="{% url 'python' %}">Python</a></li>
+                                <li><a href="{% url 'asp.net' %}">Asp .Net</a></li>
+                                <li><a href="{% url 'java' %}">Java</a></li>
+                                <li><a href="{% url 'php' %}">PHP</a></li>
+                                <li><a href="{% url 'ror' %}">ROR</a></li>
+                                <li><a href="{% url 'golang' %}">GOLANG</a></li>
+                                <li><a href="{% url 'android' %}">Android</a></li>
+                                <li><a href="{% url 'ios' %}">IOS</a></li>
+                                <li><a href="{% url 'angularjs' %}">Angular JS</a></li>
+                                <li><a href="{% url 'nodejs' %}">Node JS</a></li>
+                                <li><a href="{% url 'reactjs' %}">React JS</a></li>
                             </ul>
                         </li>
                         <li>
@@ -82,11 +90,11 @@
                             <a href="{% url 'portfolio' %}">Portfolio</a>
                         </li>
                         <li>
-                            <a href="">Career</a>
+                            <a href="{% url 'career' %}">Career</a>
                         </li>
 
                         <li>
-                            <a href="contact.html">contact</a>
+                            <a href="{% url 'webcontact' %}">contact</a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
