@@ -67,7 +67,7 @@
 
     <!-- Start Breadcrumb
     ============================================= -->
-    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/21.jpg' %});">
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/2.png' %});">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -84,61 +84,45 @@
 
     <!-- Start Asp.net development
     ============================================= -->
+    {% for i in asp %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{{i.image1.url}}" alt="Thumb">
                     </div>
                     <div class="col-md-6 info">
-                        <h2>ASP .NET Development</h2>
-                        <p>
-                           We have experienced and expert .Net developer to build advance application in .NET for global clients.
-                            We are highly qualified for ASP.NET development and have expert staff to deal with the challenges in this technology.
-                        </p>
-                        <p>
-                            We build websites, web applications, software in this latest technology. We build web application
-                           that work with cloud support with security. With this technology we build best application in windows GUI.
-                        </p>
-                         <p>
-
-                            We always provide satisfaction to our clients by making high quality application with .Net Technology and want to always maintain this trust of theirs and Our development team wishes for it.
-                         </p>
-
+                        <h2>{{i.name}}</h2>
+                        <p>{{i.description_first}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End Asp.net development -->
 
     <!-- Start Asp.net development
     ============================================= -->
+    {% for i in asp %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 pull-right ">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{{i.image2.url}}" height="483px;" alt="Thumb">
                     </div>
                     <div class="col-md-6 info">
-                        <p>
-                            .NET is a developer platform made up of tools, programming languages, and libraries for building many different types of applications. ASP.NET is not limited to script languages, it allows you to make use of .NET languages like C#, J#, VB, etc. It allows developers to build very compelling applications by making use of Visual Studio, the development tool provided by Microsoft. ASP.NET is purely server-side technology. It is built on a common language runtime that can be used on any Windows server to host powerful ASP.NET web sites and technologies.
-                        </p>
-                        <p>
-                            It is actually a cross-platform, open-source framework for the development of internet-connected, cloud-based modern web applications. Through this framework, it is quite possible to create more effective web apps as well as services along with mobile app backends and even IoT apps.
-                        </p>
-                        <P>
-                            Asp.net core is open source with cross-platform support including CLI (Command Like Application). Formerly known as vNext, Asp.Net core supports Windows, Mac, and Linux platforms. It also includes Mobile, Cloud and IOT based solutions along with a cloud-based environment. A lightweight and high performing Asp.net core web application development provides its own benefits to develop enterprise level web applications.
-                        </P>
+                        <p>{{i.description_second}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End Asp.net development -->
 
 
@@ -148,9 +132,6 @@
         <div class="container">
             <div class="row">
                 <div class="about-info">
-                    <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
-                    </div>
                     <div class="col-md-6 info">
                         <div id="featured-courses" class="featured-courses-area left-details default-padding">
                          <div class="container">
@@ -162,7 +143,7 @@
                                      <div class="thumb">
                                         </div>
                                   </div>
-                        <div class="col-md-6 info">
+                        <div class="col-md-12 info">
                             <h2>
                                 <a href="#">BENEFITS OF ASP .NET</a>
                             </h2>

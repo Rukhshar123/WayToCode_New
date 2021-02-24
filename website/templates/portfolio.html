@@ -61,7 +61,7 @@
 
     <!-- Start Breadcrumb
     ============================================= -->
-    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/12.jpg' %});">
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/2.png' %});">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -85,195 +85,25 @@
                     <div class="col-md-12 portfolio-content">
                         <div class="mix-item-menu active-theme">
                             <button class="active" data-filter="*">All</button>
-                            <button data-filter=".web">Web</button>
-                            <button data-filter=".app">App</button>
+                            <button data-filter=".Web">Web Development</button>
+                            <button data-filter=".App">App Development</button>
 
                         </div>
                         <!-- End Mixitup Nav-->
 
                         <div class="row magnific-mix-gallery masonary text-light">
                             <div id="portfolio-grid" class="portfolio-items col-3">
-                                <div class="pf-item web students">
+                                {% for i in port%}
+                                <div class="pf-item {{i.name}} students">
                                     <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/web1.png' %}" alt="thumb" />
+                                        <img src="{{i.image1.url}}" alt="thumb" />
                                         <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/web1.png' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
+                                            <a href="{{i.image2.url}}" class="item popup-link"><i class="fa fa-expand"></i></a>
                                             <a href="#"><i class="fas fa-link"></i></a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="pf-item web students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/web2.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/web2.png' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item web students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/web3.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/web3.png' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item web students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/web4.jpg' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/web4.jpg' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item web students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/web5.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/web5.png' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item web students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/web6.jpg' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/web6.jpg' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item web students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/web7.jpg' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/web7.jpg' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item web students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/web8.jpg' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/web8.jpg' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item web students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/web9.jpg' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/web9.jpg' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item web students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/web10.jpg' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/web10.jpg' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item app students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/app1.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/app1.png' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item app students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/app2.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/app2.png' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item app students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/app3.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/app3.png' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item app students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/app4.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/app4.png' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item app students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/app5.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/app5.png' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item app students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/app6.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/app6.png' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item app students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/app7.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/app7.png' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item app students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/app8.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/app8.png' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item app students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/app9.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/app9.png' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item app students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/app10.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="{% static 'assets/img/portfolio/app10.png' %}" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-
+                                {% endfor %}
                             </div>
                         </div>
                     </div>

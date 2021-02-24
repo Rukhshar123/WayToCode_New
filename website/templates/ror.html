@@ -67,7 +67,7 @@
 
     <!-- Start Breadcrumb
     ============================================= -->
-    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/21.jpg' %});">
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/2.png' %});">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -84,58 +84,45 @@
 
     <!-- Start Asp.net development
     ============================================= -->
+    {% for i in ror %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{{i.image2.url}}" height="400px;" alt="Thumb">
                     </div>
                     <div class="col-md-6 info">
-                        <h2>Ruby On Rails Development</h2>
-                        <p>
-                          We have an experience and expert team to take care of Ruby On Rails development. Our best and expert developers have succeeded in creating the most difficult applications in ROR. We have been successful in creating websites, web applications, applications and everything in ROR.
-                        </p>
-                        <p>
-                            We work on various different frameworks, libraries and models of ROR and our expert team takes care of every analysis. We remain fully focused on the satisfaction of our clients and the seriousness of the project, so that we can complete our work smoothly.
-                        </p>
-                         <p>
-                             Our team breaks through each observatory and moves forward and keeps working in a systematic and analyzed way, which gives you an idea of which direction your project is going and your vision is clear.
-                         </p>
-
+                        <h2>{{i.name}}</h2>
+                        <p>{{i.description_first}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End Asp.net development -->
 
     <!-- Start Asp.net development
     ============================================= -->
+    {% for i in ror %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 pull-right ">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{{i.image2.url}}" alt="Thumb">
                     </div>
                     <div class="col-md-6 info">
-                       <p>
-                        Ruby on Rails, sometimes known as "RoR" or just "Rails," is an open source framework for Web development in Ruby, an object-oriented programming (OOP) language similar to Perl and Python.
-                       </p>
-                        <p>
-                           Ruby on Rails is a server-side web application framework that is written in a dynamic programming language called Ruby. Ruby is the programming language, and Rail is a framework.
-                        </p>
-                      <p>
-                          RoR is perfect for building MVP, and the first and foremost factor is high speed. RoR, with its readymade modules and in-built development tools, provides an opportunity to focus on core business activities.  RoR framework runs on Linux that is open-source that helps in reduction of the developing applications for the utilization by the startups as well as businesses around the world.
-                      </p>
+                       <p>{{i.description_second}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End Asp.net development -->
 
 
@@ -145,9 +132,6 @@
         <div class="container">
             <div class="row">
                 <div class="about-info">
-                    <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
-                    </div>
                     <div class="col-md-6 info">
                         <div id="featured-courses" class="featured-courses-area left-details default-padding">
                          <div class="container">
@@ -159,7 +143,7 @@
                                      <div class="thumb">
                                         </div>
                                   </div>
-                        <div class="col-md-6 info">
+                        <div class="col-md-12 info">
                             <h2>
                                 <a href="#">BENEFITS OF ROR</a>
                             </h2>

@@ -67,7 +67,7 @@
 
     <!-- Start Breadcrumb
     ============================================= -->
-    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/21.jpg' %});">
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/2.png' %});">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -84,45 +84,39 @@
 
     <!-- Start web development
     ============================================= -->
+    {% for i in web %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{% static 'assets/img/main services/web development1.jpg' %}" alt="Thumb" height="400px;">
                     </div>
                     <div class="col-md-6 info">
                         <h2>Web Development</h2>
-                        <p>
-                           If you are looking for a reliable web development company for your next project, Hire Experts like us. Our expert team members provide the best services for your organization. Your work & time is precious for us & we ensure it is built by our web designing and development experts. We follow a methodological approach to provide you a solid and longtime applicable solution.
-                        </p>
-                        <p>
-                            Nowadays, online marketing and business, even websites of Your business, play a very important role for your business growth. We are here to build your ideas, concepts and goals in reality through a website. We have a dedicated team of professional designers and developers, creating powerful and engaging websites. We provide Outsourcing Software Development Services and our offshore web developers help you understand the functionality of screen resolution and design web pages keeping the look and feel of the website intact.
-                        </p>
-
+                        {{i.description_first}}
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End web development -->
 
     <!-- Start web development
     ============================================= -->
+    {% for i in web %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 pull-right ">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{% static 'assets/img/main services/web development.png' %}" alt="Thumb" height="400px;">
                     </div>
                     <div class="col-md-6 info">
                         <p>
-                           We believe that a good online presence starts with a great website and it goes without saying that the majority of online experiences begin with your website. We develop great Wordpress, Magento and custom eCommerce solutions, thus helping businesses to scale, grow, and develop. Our team also experts in employing various frameworks created for the development of static and dynamic websites keeping in mind your budget provisions.
-                        </p>
-                        <p>
-                            Are you a business owner or startup and are you looking for the best web design company and development solution? If yes then your wait ends here with Way To Code Technologies LLP. Our eCommerce website development solution helps deliver a comprehensive and effective e-business strategy, products and marketing tactics, design and usability, technology, and security.
+                          {{i.description_second}}
                         </p>
 
                     </div>
@@ -131,6 +125,7 @@
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End web development -->
 
     <!-- Start web devlopment technologies
@@ -149,9 +144,9 @@
                     <div class="item">
                         <div class="col-md-5">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/courses/f1.jpg' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/main services/php.png' %}" alt="Thumb">
                                 <div class="live-view">
-                                    <a href="assets/img/courses/f1.jpg" class="item popup-link">
+                                    <a href="assets/img/main services/php.png" class="item popup-link">
                                         <i class="fa fa-camera"></i>
                                     </a>
                                 </div>
@@ -191,9 +186,9 @@
                     <div class="item">
                         <div class="col-md-5">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/courses/f2.jpg' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/main services/asp.net.png' %}" alt="Thumb">
                                 <div class="live-view">
-                                    <a href="assets/img/courses/f2.jpg" class="item popup-link">
+                                    <a href="assets/img/main services/asp.net.png" class="item popup-link">
                                         <i class="fa fa-camera"></i>
                                     </a>
                                 </div>
@@ -231,9 +226,9 @@
                     <div class="item">
                         <div class="col-md-5">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/courses/f2.jpg' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/main services/java.png' %}" alt="Thumb">
                                 <div class="live-view">
-                                    <a href="assets/img/courses/f2.jpg" class="item popup-link">
+                                    <a href="assets/img/main services/java.png" class="item popup-link">
                                         <i class="fa fa-camera"></i>
                                     </a>
                                 </div>
@@ -270,9 +265,9 @@
                     <div class="item">
                         <div class="col-md-5">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/courses/f2.jpg' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/main services/python.png' %}" alt="Thumb">
                                 <div class="live-view">
-                                    <a href="assets/img/courses/f2.jpg" class="item popup-link">
+                                    <a href="assets/img/main services/python.png" class="item popup-link">
                                         <i class="fa fa-camera"></i>
                                     </a>
                                 </div>
@@ -312,9 +307,9 @@
                     <div class="item">
                         <div class="col-md-5">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/courses/f2.jpg' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/main services/ror.png' %}" alt="Thumb">
                                 <div class="live-view">
-                                    <a href="assets/img/courses/f2.jpg" class="item popup-link">
+                                    <a href="assets/img/main services/ror.png" class="item popup-link">
                                         <i class="fa fa-camera"></i>
                                     </a>
 

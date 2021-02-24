@@ -31,7 +31,7 @@ INSTALLED_APPS = [
     'website',
     'tutorials',
     'adminside',
-
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -71,7 +71,7 @@ WSGI_APPLICATION = 'waytocode.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'waytocode',
+        'NAME': 'Waytocodeproject',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',

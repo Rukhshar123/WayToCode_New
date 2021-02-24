@@ -47,7 +47,31 @@
                                 <li class="sidebar-item"><a href="{% url 'allcareer' %}" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu">All Carrer </span></a></li>
                             </ul>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="charts.html" aria-expanded="false"><i class="mdi mdi-power"></i><span class="hide-menu">Charts</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Training</span></a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item"><a href="{% url 'addtraining' %}" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Add Training</span></a></li>
+                                <li class="sidebar-item"><a href="{% url 'alltraining' %}" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu">All Training </span></a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Student Review</span></a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item"><a href="{% url 'addstudentreview' %}" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Add Review</span></a></li>
+                                <li class="sidebar-item"><a href="{% url 'allstudentreview' %}" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu">All Review </span></a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Course</span></a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item"><a href="{% url 'addcourse' %}" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Add Course</span></a></li>
+                                <li class="sidebar-item"><a href="{% url 'allcourse' %}" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu">All Course </span></a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Blog</span></a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item"><a href="{% url 'addblog' %}" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Add Blog</span></a></li>
+                                <li class="sidebar-item"><a href="{% url 'allblog' %}" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu">All Blog </span></a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{% url 'logout' %}" aria-expanded="false"><i class="mdi mdi-power"></i><span class="hide-menu">Logout</span></a></li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->

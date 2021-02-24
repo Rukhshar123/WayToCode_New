@@ -67,7 +67,7 @@
 
     <!-- Start Breadcrumb
     ============================================= -->
-    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/21.jpg' %});">
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/2.png' %});">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -84,61 +84,45 @@
 
     <!-- Start Asp.net development
     ============================================= -->
+    {% for i in ios %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{{i.image1.url}}" height="400px;" alt="Thumb">
                     </div>
                     <div class="col-md-6 info">
-                        <h2>IOS Development</h2>
-                        <p>
-                          We have an experience and expert team to take care of IOS development. Our best and expert developers have succeeded in creating the most difficult Apps in IOS. We have been successful in creating many applications in IOS.
-                        </p>
-                        <p>
-                            Our IOS app development can help you to develop mobile app in Iphone, which helps you to develop secure business customers.
-                        </p>
-                         <p>
-                             Our team breaks through each observatory and moves forward and keeps working in a systematic and analyzed way, which gives you an idea of which direction your project is going and your vision is clear.
-                         </p>
-
+                        <h2>{{i.name}}</h2>
+                        <p>{{i.description_first}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End Asp.net development -->
 
     <!-- Start Asp.net development
     ============================================= -->
+    {% for i in ios %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 pull-right ">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{{i.image2.url}}" alt="Thumb">
                     </div>
                     <div class="col-md-6 info">
-                       <p>
-                           IOS app development tools and technologies refers a diverse set of tools and programming languages that are used to develop app for iPhone and iPad devices alike.
-                       </p>
-                        <p>
-                            Now, it's time to look at the top iOS app development trends in 2020. We should take a deep dive into iOS mobile app development trends because iOS has become one of the leading development platforms in the market in recent years.
-                        </p>
-                       <p>
-                           Ionic’s web-first approach enables businesses to accelerate app development without having to bring in outside talent. Ionic’s official app runtime that makes it easy to deploy web apps to native platforms like iOS, Android, and more.
-                       </p>
-                        <p>
-                           Swift is a powerful and intuitive programming language for macOS, iOS, watchOS, tvOS and beyond. Swift is the result of the latest research on programming languages, combined with decades of experience building Apple platforms.
-                        </p>
+                       <p>{{i.description_second}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End Asp.net development -->
 
 
@@ -148,9 +132,6 @@
         <div class="container">
             <div class="row">
                 <div class="about-info">
-                    <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
-                    </div>
                     <div class="col-md-6 info">
                         <div id="featured-courses" class="featured-courses-area left-details default-padding">
                          <div class="container">
@@ -162,7 +143,7 @@
                                      <div class="thumb">
                                         </div>
                                   </div>
-                        <div class="col-md-6 info">
+                        <div class="col-md-12 info">
                             <h2>
                                 <a href="#">BENEFITS OF IOS</a>
                             </h2>

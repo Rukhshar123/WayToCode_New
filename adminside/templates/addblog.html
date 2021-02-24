@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
      <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/images/favicon.png' %}">
-    <title>Way To Code - Add Services</title>
+    <title>Way To Code - Add Blog</title>
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="{% static 'assets/libs/select2/dist/css/select2.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'assets/libs/jquery-minicolors/jquery.minicolors.css' %}">
@@ -64,12 +64,12 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
-                        <h4 class="page-title">Add Services</h4>
+                        <h4 class="page-title">Add Blog</h4>
                         <div class="ml-auto text-right">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Services</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Blog</li>
                                 </ol>
                             </nav>
                         </div>
@@ -98,44 +98,32 @@
                     </center>
                     <div class="col-md-12">
                         <div class="card">
-                            <form method="post" action="addservices" enctype="multipart/form-data" class="form-horizontal">
+                            <form method="post" action="addblog" enctype="multipart/form-data" class="form-horizontal">
                                 {% csrf_token %}
                                 <div class="card-body">
-                                    <h4 class="card-title">Service Info</h4>
+                                    <h4 class="card-title">Blog</h4>
                                     <div class="form-group row">
-                                        <label for="name" class="col-sm-3 text-right control-label col-form-label">Service Name:</label>
+                                        <label for="header" class="col-sm-3 text-right control-label col-form-label">Header:</label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control" name="name" id="name" placeholder="Service Name">
+                                            <input type="text" class="form-control" name="header" id="header" placeholder="Header" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="about" class="col-sm-3 text-right control-label col-form-label">Service About:</label>
+                                        <label for="description" class="col-sm-3 text-right control-label col-form-label">Duration:</label>
                                         <div class="col-sm-6">
-                                           <textarea class="form-control" name="about" id="about" placeholder="About Service"></textarea>
+                                            <textarea class="form-control" name="description" id="description" placeholder="Description" required></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="desc1" class="col-sm-3 text-right control-label col-form-label">Service Description1:</label>
+                                        <label for="date" class="col-sm-3 text-right control-label col-form-label">Date:</label>
                                         <div class="col-sm-6">
-                                           <textarea class="form-control" name="desc1" id="desc1" placeholder="First Description"></textarea>
+                                            <input type="date" class="form-control" name="date" id="date" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="desc2" class="col-sm-3 text-right control-label col-form-label">Service Description2:</label>
+                                        <label for="image" class="col-sm-3 text-right control-label col-form-label">Image:</label>
                                         <div class="col-sm-6">
-                                           <textarea class="form-control" name="desc2" id="desc2" placeholder="Second Description"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="link" class="col-sm-3 text-right control-label col-form-label">Link:</label>
-                                        <div class="col-sm-6">
-                                            <input type="text" class="form-control" name="link" id="link" placeholder="Link">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="image" class="col-sm-3 text-right control-label col-form-label">Service Image:</label>
-                                        <div class="col-sm-6">
-                                            <input type="file" class="form-control" name="image" id="image">
+                                            <input type="file" class="form-control" name="image" id="image" required>
                                         </div>
                                     </div>
                                 </div>

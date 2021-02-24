@@ -69,7 +69,7 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner text-light carousel-zoom">
                 <div class="item active">
-                    <div class="slider-thumb bg-fixed" style="background-image: url({% static 'assets/img/banner/1.jpg' %});"></div>
+                    <div class="slider-thumb bg-fixed" style="background-image: url({% static 'assets/img/banner/1.png' %});"></div>
                     <div class="box-table shadow dark">
                         <div class="box-cell">
                             <div class="container">
@@ -86,7 +86,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="slider-thumb bg-fixed" style="background-image: url({% static 'assets/img/banner/2.jpg' %});"></div>
+                    <div class="slider-thumb bg-fixed" style="background-image: url({% static 'assets/img/banner/2.png' %});"></div>
                     <div class="box-table shadow dark">
                         <div class="box-cell">
                             <div class="container">
@@ -103,7 +103,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="slider-thumb bg-fixed" style="background-image: url({% static 'assets/img/banner/3.jpg' %});"></div>
+                    <div class="slider-thumb bg-fixed" style="background-image: url({% static 'assets/img/banner/3.png' %});"></div>
                     <div class="box-table shadow dark">
                         <div class="box-cell">
                             <div class="container">
@@ -146,7 +146,7 @@
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{% static 'assets/img/about_us2.png' %}" alt="Thumb">
                     </div>
                     <div class="col-md-6 info">
                         <h5>We are at Way To Code</h5>
@@ -157,7 +157,7 @@
                         <p>
                             For over 5 years, we have done all the obstacles and our experts have also finished very hard tasks with easy age.
                         </p>
-                        <a href="#" class="btn btn-dark border btn-md">Explore Now</a>
+                        <a href="{% url 'about' %}" class="btn btn-dark border btn-md">Explore Now</a>
                     </div>
                 </div>
 
@@ -181,137 +181,25 @@
                 <div class="col-md-12">
                     <div class="popular-courses-items popular-courses-carousel owl-carousel owl-theme">
                         <!-- Single Item -->
+                        {% for svs in service %}
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="{% static 'assets/img/courses/1.jpg' %}" alt="Thumb">
+                                    <img src="{{svs.image.url}}" alt="Thumb">
                                 </a>
-                                <div class="price"><a href="#">Web Development</a></div>
+                                <div class="price"><a href="#">{{svs.name}}</a></div>
                             </div>
                             <div class="info">
                                 <p>
-                                   Web development is the building and maintenance of websites; it’s the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience.
+                                  {{svs.about}}
                                 </p>
                                 <div class="bottom-info">
 
-                                    <a href="#">Explore Now</a>
+                                    <a href="{{svs.link}}">Explore Now</a>
                                 </div>
                             </div>
                         </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="{% static 'assets/img/courses/1.jpg' %}" alt="Thumb">
-                                </a>
-                                <div class="price"><a href="#">App Development</a></div>
-                            </div>
-                            <div class="info">
-                                <p>
-                                   Mobile app development is the creation of software intended to run on mobile devices and optimized to take advantage of those products' unique features and hardware on different platform.
-                                </p>
-                                <div class="bottom-info">
-
-                                    <a href="#">Explore Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="{% static 'assets/img/courses/1.jpg' %}" alt="Thumb">
-                                </a>
-                                <div class="price"><a href="#">Design Services</a></div>
-                            </div>
-                            <div class="info">
-                                <p>
-                                    When it comes to show-off business, a well-crafted Website Design seems to play an important role. We are specialized in designing creative user centric websites customized to your business goals.
-                                </p>
-                                <div class="bottom-info">
-
-                                    <a href="#">Explore Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="{% static 'assets/img/courses/1.jpg' %}" alt="Thumb">
-                                </a>
-                                <div class="price"><a href="#">Digital Marketing</a></div>
-                            </div>
-                            <div class="info">
-                                <p>
-                                   If you are wondering what digital marketing is… it’s is advertising delivered through digital channels. Channels such as social media, email, web applications, search engines, websites, or any new digital channel.
-                                </p>
-                                <div class="bottom-info">
-
-                                    <a href="#">Explore Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="{% static 'assets/img/courses/1.jpg' %}" alt="Thumb">
-                                </a>
-                                <div class="price"><a href="#">QA & Testing</a></div>
-                            </div>
-                            <div class="info">
-                                <p>
-                                   QA aims to deliver consistent results through a set of standardized procedures, which means that organizations also need to make sure that their processes for achieving the desired results.
-                                </p>
-                                <div class="bottom-info">
-
-                                    <a href="#">Explore Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="{% static 'assets/img/courses/1.jpg' %}" alt="Thumb">
-                                </a>
-                                <div class="price"><a href="#">Graphics & UI/UX</a></div>
-                            </div>
-                            <div class="info">
-                                <p>
-                                   UX Designing is completely related to how the product feels and completely different from traditional graphic design. UX design focuses on the logic and structure behind the elements you actually interact
-                                </p>
-                                <div class="bottom-info">
-
-                                    <a href="#">Explore Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="{% static 'assets/img/courses/1.jpg' %}" alt="Thumb">
-                                </a>
-                                <div class="price"><a href="#">Content Writing</a></div>
-                            </div>
-                            <div class="info">
-                                <p>
-                                   Content writing is the process of planning, writing and editing web content, typically for digital marketing purposes. It can include writing blog posts and articles, scripts for videos and podcasts
-                                </p>
-                                <div class="bottom-info">
-
-                                    <a href="#">Explore Now</a>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                         <!-- End Single Item -->
                     </div>
                 </div>
@@ -326,7 +214,7 @@
     <div class="wcs-area bg-dark text-light">
         <div class="container-full">
             <div class="row">
-                <div class="col-md-6 thumb bg-cover" style="background-image: url({% static 'assets/img/banner/16.jpg' %});"></div>
+                <div class="col-md-6 thumb bg-cover" style="background-image: url({% static 'assets/img/banner/why choose.png' %});"></div>
                 <div class="col-md-6 content">
                     <div class="site-heading text-left">
                         <h2>Why chose us</h2>
@@ -405,92 +293,19 @@
             </div>
             <div class="row">
                 <div class="top-cat-items">
+                    {% for i in possibility %}
                     <div class="col-md-3 col-sm-6 equal-height">
-                        <div class="item" style="background-image: url({% static 'assets/img/category/1.jpg'%});">
+                        <div class="item" style="background-image: url({{i.image.url}});">
                             <a href="#">
                                 <i class="flaticon-feature"></i>
                                 <div class="info">
-                                    <h4>Modern design</h4>
+                                    <h4>{{i.name}}</h4>
                                     <span></span>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 equal-height">
-                        <div class="item" style="background-image: url({% static 'assets/img/category/2.jpg' %});">
-                            <a href="#">
-                                <i class="flaticon-interaction"></i>
-                                <div class="info">
-                                    <h4>Light Weight Perfomance</h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 equal-height">
-                        <div class="item" style="background-image: url({% static 'assets/img/category/3.jpg' %});">
-                            <a href="#">
-                                <i class="flaticon-conveyor"></i>
-                                <div class="info">
-                                    <h4>USEFUL SHORTCODES</h4>
-                                    <span></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 equal-height">
-                        <div class="item" style="background-image: url({% static 'assets/img/category/4.jpg' %});">
-                            <a href="#">
-                                <i class="flaticon-education"></i>
-                                <div class="info">
-                                    <h4>Training</h4>
-                                    <span></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 equal-height">
-                        <div class="item" style="background-image: url({% static 'assets/img/category/5.jpg' %});">
-                            <a href="#">
-                                <i class="flaticon-potential"></i>
-                                <div class="info">
-                                    <h4>Multipurpose Concept</h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 equal-height">
-                        <div class="item" style="background-image: url({% static 'assets/img/category/6.jpg' %});">
-                            <a href="#">
-                                <i class="flaticon-print"></i>
-                                <div class="info">
-                                    <h4>Responsive Layouts</h4>
-                                    <span></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 equal-height">
-                        <div class="item" style="background-image: url({% static 'assets/img/category/7.jpg' %});">
-                            <a href="#">
-                                <i class="flaticon-translate"></i>
-                                <div class="info">
-                                    <h4>Lifetime Validity</h4>
-                                    <span></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 equal-height">
-                        <div class="item" style="background-image: url({% static 'assets/img/category/8.jpg' %});">
-                            <a href="#">
-                                <i class="flaticon-firewall"></i>
-                                <div class="info">
-                                    <h4>24/7 Live Support</h4>
-                                    <span></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -499,7 +314,7 @@
 
     <!-- Start Fun Factor
     ============================================= -->
-    <div class="fun-factor-area default-padding bottom-less text-center bg-fixed shadow dark-hard" style="background-image: url({% static 'assets/img/banner/2.jpg' %});">
+    <div class="fun-factor-area default-padding bottom-less text-center bg-fixed shadow dark-hard" style="background-image: url({% static 'assets/img/banner/4.png' %});">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6 item">
@@ -583,58 +398,19 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
                 <div class="col-md-12">
                     <div class="clients-review-carousel owl-carousel owl-theme">
                         <!-- Single Item -->
+                        {% for i in review %}
                         <div class="item">
                             <div class="col-md-5 thumb">
-                                <img src="{% static 'assets/img/team/user.jpg' %}" alt="Thumb">
+                                <img src="{{i.image.url}}" alt="Thumb">
                             </div>
                             <div class="col-md-7 info">
                                 <p>
-                                    Extremely pleased with our website and it was a sincere pleasure working with Way To Code.
+                                    {{i.reviews}}
                                 </p>
-                                <span>Jack</span>
+                                <span>{{i.name}}</span>
                             </div>
                         </div>
-                        <!-- Single Item -->
-                        <!-- Single Item -->
-                        <div class="item">
-                            <div class="col-md-5 thumb">
-                                <img src="{% static 'assets/img/team/user_2.png' %}" alt="Thumb">
-                            </div>
-                            <div class="col-md-7 info">
-                                <p>
-                                    I want to thank you for my fabulous mobile app. You did an excellent job and you were so easy to work with
-                                </p>
-                                <span>Lee</span>
-                            </div>
-                        </div>
-                        <!-- Single Item -->
-                        <!-- Single Item -->
-                        <div class="item">
-                            <div class="col-md-5 thumb">
-                                <img src="{% static 'assets/img/team/user.jpg' %}" alt="Thumb">
-                            </div>
-                            <div class="col-md-7 info">
-                                <p>
-                                    Man you are fast!! Perfect!! You gave perfect lookout and functionality to my website. Thanks fo your outstanding support!!
-                                </p>
-
-                                <span>Suwarna</span>
-                            </div>
-                        </div>
-                        <!-- Single Item -->
-                        <!-- Single Item -->
-                        <div class="item">
-                            <div class="col-md-5 thumb">
-                                <img src="{% static 'assets/img/team/user_2.png' %}" alt="Thumb">
-                            </div>
-                            <div class="col-md-7 info">
-                                <p>
-                                    Great service, prompt, reasonable cost, experience staff and well mannered project analysis - great job thanks!
-                                </p>
-
-                                <span>Mike</span>
-                            </div>
-                        </div>
+                        {% endfor %}
                         <!-- Single Item -->
                     </div>
                 </div>

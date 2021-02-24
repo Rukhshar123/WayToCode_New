@@ -67,7 +67,7 @@
 
     <!-- Start Breadcrumb
     ============================================= -->
-    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/21.jpg' %});">
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/2.png' %});">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -84,56 +84,45 @@
 
     <!-- Start web development
     ============================================= -->
+    {% for i in testing %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{% static 'assets/img/main services/QA testing and content writing.png' %}" alt="Thumb">
                     </div>
                     <div class="col-md-6 info">
                         <h2>Software Testing</h2>
-                        <p>
-                           If you are looking for a reliable software testing company for your next project, Hire Experts like us. Our expert team members provide the best services for your organization. Your work & time is precious for us & we ensure it is built by our web designers,software testers and development experts.
-                        </p>
-                        <p>
-                            Test the features,functions and requirements of the project and make specific planning to configure it. After making testing strategy & planning validate the system requirements aginst it original functionalities. Execute test in various ways using different agile models.
-                        </p>
-
-
+                        <p>{{i.description_first}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End web development -->
 
     <!-- Start web development
     ============================================= -->
+    {% for i in testing %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 pull-right ">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{% static 'assets/img/main services/testing1.png' %}" alt="Thumb" height="400px;">
                     </div>
                     <div class="col-md-6 info">
-                        <p>
-                            QA includes activities that ensure the implementation of processes, procedures and standards in context to verification of developed software and intended requirements.
-                        </p>
-                        <p>
-                            Through Quality Control the team verifies the product’s compliance with the functional requirements. As defined by Investopedia, it is a “process through which a business seeks to ensure that product quality is maintained or improved and manufacturing errors are reduced or eliminated”.
-                        </p>
-                        <p>
-                            Testing is the basic activity aimed at detecting and solving technical issues in the software source code and assessing the overall product usability, performance, security, and compatibility. It has a very narrow focus and is performed by the test engineers in parallel with the development process or at the dedicated testing stage (depending on the methodological approach to the software development cycle).
-                        </p>
+                        <p>{{i.description_second}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End web development -->
 
     <!-- Start web devlopment technologies
@@ -152,9 +141,9 @@
                     <div class="item">
                         <div class="col-md-5">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/courses/f1.jpg' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/main services/qa1.jpg' %}" alt="Thumb" height="483px;">
                                 <div class="live-view">
-                                    <a href="assets/img/courses/f1.jpg" class="item popup-link">
+                                    <a href="assets/img/main services/qa1.jpg" class="item popup-link">
                                         <i class="fa fa-camera"></i>
                                     </a>
                                 </div>
@@ -194,10 +183,9 @@
                     <div class="item">
                         <div class="col-md-5">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/courses/f2.jpg' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/main services/qa2.jpg' %}" alt="Thumb" height="483px;">
                                 <div class="live-view">
-                                    <a href="assets/img/courses/f2.jpg" class="item popup-link">
-                                        <i class="fa fa-camera"></i>
+                                    <a href="assets/img/main services/qa2.jpg" class="item popup-link">
                                     </a>
                                 </div>
                             </div>
@@ -237,10 +225,9 @@
                     <div class="item">
                         <div class="col-md-5">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/courses/f2.jpg' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/main services/qa3.jpeg' %}" alt="Thumb" height="483px;">
                                 <div class="live-view">
-                                    <a href="assets/img/courses/f2.jpg" class="item popup-link">
-                                        <i class="fa fa-camera"></i>
+                                    <a href="assets/img/main services/qa2.jpeg" class="item popup-link">
                                     </a>
                                 </div>
                             </div>

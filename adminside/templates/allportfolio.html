@@ -94,7 +94,8 @@
                                         <thead>
                                             <tr>
                                                 <th>Name</th>
-                                                <th>Image</th>
+                                                <th>Image1</th>
+                                                <th>Image2</th>
                                                 <th>Edit</th>
                                                 <th>Delete</th>
                                             </tr>
@@ -103,7 +104,8 @@
                                         {% for i in portfolio %}
                                             <tr>
                                                 <td>{{i.name}}</td>
-                                                <td><img src="{{i.image.url}}" style="height:100px; width:100px"></td>
+                                                <td><img src="{{i.image1.url}}" style="height:100px; width:100px"></td>
+                                                <td><img src="{{i.image2.url}}" style="height:100px; width:100px"></td>
                                                 <td><a href="editportfolio/{{i.id}}"> <button type="submit" class="btn btn-cyan btn-sm">Edit</button></a></td>
                                                 <td><a href="deleteportfolio/{{i.id}}"><button type="submit" class="btn btn-danger btn-sm">Delete</button></a></td>
                                             </tr>

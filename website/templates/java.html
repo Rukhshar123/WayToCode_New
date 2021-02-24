@@ -67,7 +67,7 @@
 
     <!-- Start Breadcrumb
     ============================================= -->
-    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/21.jpg' %});">
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/2.png' %});">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -84,61 +84,45 @@
 
     <!-- Start Asp.net development
     ============================================= -->
+    {% for i in java %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{{i.image1.url}}" alt="Thumb">
                     </div>
                     <div class="col-md-6 info">
-                        <h2>Java Development</h2>
-                        <p>
-                          We have an experience and expert team to take care of Java development. Our best and expert developers have succeeded in creating the most difficult applications in Java. We have been successful in creating websites, web applications, softwares in Java.
-                        </p>
-                        <p>
-                            We work on various different frameworks, libraries and models of Java and our expert team takes care of every analysis. We remain fully focused on the satisfaction of our clients and the seriousness of the project, so that we can complete our work smoothly.
-                        </p>
-                         <p>
-                             Our team breaks through each observatory and moves forward and keeps working in a systematic and analyzed way, which gives you an idea of which direction your project is going and your vision is clear.
-                         </p>
-
+                        <h2>{{i.name}}</h2>
+                        <p>{{i.description_first}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End Asp.net development -->
 
     <!-- Start Asp.net development
     ============================================= -->
+    {% for i in java %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 pull-right ">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{{i.image2.url}}" alt="Thumb" height="483px;">
                     </div>
                     <div class="col-md-6 info">
-                        <p>
-                            It is a computing platform for application development. Java is fast, secure, and reliable, therefore. It is widely used for developing Java applications in laptops, data centers, game consoles, scientific supercomputers, cell phones, etc.
-                        </p>
-                       <p>
-                           It is used for developing Android Apps, helps you to create Enterprise Software, Wide range of Mobile java Applications, Scientific Computing Applications, Use for Big Data Analytics, Used for Server-Side Technologies like Apache, JBoss, GlassFish, etc.
-                       </p>
-                        <P>
-                           Java achieves high performance through the use of bytecode which can be easily translated into native machine code. Java used in Banking, Retail, Information Technology, Android, Financial services, Stock market, Big Data and Scientific and Research Community.
-                        </P>
-                        <p>
-                            Most popular framework in java is Hibernate. Hibernate is an object-relational mapping (ORM) framework that makes common data handling. It’s perfect for OOP-type projects that require high productivity and portability at the same time. Hibernate is open source. It won’t hurt your wallet to give it try on your next project.
-                        </p>
+                        <p>{{i.description_second}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End Asp.net development -->
 
 
@@ -148,9 +132,6 @@
         <div class="container">
             <div class="row">
                 <div class="about-info">
-                    <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
-                    </div>
                     <div class="col-md-6 info">
                         <div id="featured-courses" class="featured-courses-area left-details default-padding">
                          <div class="container">
@@ -162,7 +143,7 @@
                                      <div class="thumb">
                                         </div>
                                   </div>
-                        <div class="col-md-6 info">
+                        <div class="col-md-12 info">
                             <h2>
                                 <a href="#">BENEFITS OF JAVA</a>
                             </h2>

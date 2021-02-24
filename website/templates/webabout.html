@@ -67,7 +67,7 @@
 
     <!-- Start Breadcrumb
     ============================================= -->
-    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/21.jpg' %});">
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/4.png' %});">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -89,7 +89,7 @@
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{% static 'assets/img/about_us2.png' %}" alt="Thumb">
                     </div>
                     <div class="col-md-6 info">
                         <h5>We are at Way To Code</h5>
@@ -133,7 +133,7 @@
     <div class="wcs-area bg-dark text-light">
         <div class="container-full">
             <div class="row">
-                <div class="col-md-6 thumb bg-cover" style="background-image: url({% static 'assets/img/banner/16.jpg' %});"></div>
+                <div class="col-md-6 thumb bg-cover" style="background-image: url({% static 'assets/img/banner/why choose.png' %});"></div>
                 <div class="col-md-6 content">
                     <div class="site-heading text-left">
                         <h2>Why chose us</h2>
@@ -213,20 +213,21 @@
                     <div class="advisor-carousel owl-carousel owl-theme text-center text-light">
 
                         <!-- Single Item -->
+                        {% for i in team %}
                         <div class="advisor-item">
                             <div class="info-box">
-                                <img src="{% static 'assets/img/team/vinod.png' %}" alt="Thumb">
+                                <img src="{{i.image.url}}" alt="Thumb">
                                 <div class="info-title">
-                                    <h4>Vinod Sonava</h4>
-                                    <span>CEO & Founder</span>
+                                    <h4>{{i.name}}</h4>
+                                    <span>{{i.designation}}</span>
                                 </div>
                                 <div class="overlay">
                                     <div class="box">
                                         <div class="content">
                                             <div class="overlay-content">
-                                                <h4>Vinod Sonava</h4>
+                                                <h4>{{i.name}}</h4>
                                                 <p>
-                                                   CEO & Founder
+                                                   {{i.designation}}
                                                 </p>
 
                                             </div>
@@ -235,6 +236,7 @@
                                 </div>
                             </div>
                         </div>
+                        {% endfor %}
                         <!-- Single Item -->
                         <!-- Single Item -->
                         <div class="advisor-item">
@@ -339,7 +341,7 @@
 
     <!-- Start Video Area
     ============================================= -->
-    <div class="video-area padding-xl text-center bg-fixed text-light shadow dark-hard" style="background-image: url({% static 'assets/img/banner/16.jpg' %});">
+    <div class="video-area padding-xl text-center bg-fixed text-light shadow dark-hard" style="background-image: url({% static 'assets/img/banner/1.png' %});">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
@@ -383,105 +385,25 @@
                     <div class="col-md-12 portfolio-content">
                         <div class="mix-item-menu active-theme">
                             <button class="active" data-filter="*">All</button>
-                            <button data-filter=".web">Web Development</button>
-                            <button data-filter=".app">App Development</button>
+                            <button data-filter=".Web">Web Development</button>
+                            <button data-filter=".App">App Development</button>
 
                         </div>
                         <!-- End Mixitup Nav-->
 
                         <div class="row magnific-mix-gallery masonary text-light">
                             <div id="portfolio-grid" class="portfolio-items col-3">
-                                <div class="pf-item web students">
+                                {% for i in port%}
+                                <div class="pf-item {{i.name}} students">
                                     <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/web1.png' %}" alt="thumb" />
+                                        <img src="{{i.image1.url}}" alt="thumb" />
                                         <div class="overlay">
-                                            <a href="assets/img/gallery/1.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
+                                            <a href="{{i.image2.url}}" class="item popup-link"><i class="fa fa-expand"></i></a>
                                             <a href="#"><i class="fas fa-link"></i></a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="pf-item web students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/web2.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="assets/img/gallery/1.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item web students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/web3.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="assets/img/gallery/1.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item web students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/web4.jpg' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="assets/img/gallery/1.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item web students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/web5.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="assets/img/gallery/1.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item app students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/app1.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="assets/img/gallery/1.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item app students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/app2.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="assets/img/gallery/1.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item app students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/app3.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="assets/img/gallery/1.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item app students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/app4.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="assets/img/gallery/1.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pf-item app students">
-                                    <div class="item-effect">
-                                        <img src="{% static 'assets/img/portfolio/app5.png' %}" alt="thumb" />
-                                        <div class="overlay">
-                                            <a href="assets/img/gallery/1.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                            <a href="#"><i class="fas fa-link"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-
+                                {% endfor %}
                             </div>
                         </div>
                     </div>

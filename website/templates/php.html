@@ -67,7 +67,7 @@
 
     <!-- Start Breadcrumb
     ============================================= -->
-    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/21.jpg' %});">
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/2.png' %});">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -84,58 +84,45 @@
 
     <!-- Start Asp.net development
     ============================================= -->
+    {% for i in php %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{{i.image1.url}}" alt="Thumb">
                     </div>
                     <div class="col-md-6 info">
-                        <h2>PHP Development</h2>
-                        <p>
-                          We have an experience and expert team to take care of PHP development. Our best and expert developers have succeeded in creating the most difficult applications in PHP. We have been successful in creating websites, web applications, applications and everything in PHP.
-                        </p>
-                        <p>
-                            We work on various different frameworks, libraries and modules of PHP and our expert team takes care of every analysis. We remain fully focused on the satisfaction of our clients and the seriousness of the project, so that we can complete our work smoothly.
-                        </p>
-                         <p>
-                             Our team breaks through each observatory and moves forward and keeps working in a systematic and analyzed way, which gives you an idea of which direction your project is going and your vision is clear.
-                         </p>
-
+                        <h2>{{i.name}}</h2>
+                        <p>{{i.description_first}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End Asp.net development -->
 
     <!-- Start Asp.net development
     ============================================= -->
+    {% for i in php %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 pull-right ">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{{i.image2.url}}" height="483px;" alt="Thumb">
                     </div>
                     <div class="col-md-6 info">
-                        <p>
-                            PHP is one of the most widely used server side scripting language for web development. PHP is so popular because it's very simple to learn, code and deploy on server.
-                        </p>
-                        <p>
-                            PHP is cross platform, hence you can easily develop and move/deploy your PHP code/project to almost all the major operating systems like Windows, Linux, Mac OSX etc. All the popular web hosting services support PHP. Also the web hosting plans for PHP are generally the amongst the cheapest plans becasue of its popularity.
-                        </p>
-                        <P>
-                           It can be used to create Web applications like Social Networks(Facebook, Digg), Blogs(Wordpress, Joomla), eCommerce websites(OpenCart, Magento etc.) etc. Wordpress is one of the most used blogging(CMS) platform in the World and Laravel is most popular framework in PHP.
-                        </P>
+                        <p>{{i.description_second}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End Asp.net development -->
 
 
@@ -145,9 +132,6 @@
         <div class="container">
             <div class="row">
                 <div class="about-info">
-                    <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
-                    </div>
                     <div class="col-md-6 info">
                         <div id="featured-courses" class="featured-courses-area left-details default-padding">
                          <div class="container">
@@ -159,7 +143,7 @@
                                      <div class="thumb">
                                         </div>
                                   </div>
-                        <div class="col-md-6 info">
+                        <div class="col-md-12 info">
                             <h2>
                                 <a href="#">BENEFITS OF PHP</a>
                             </h2>

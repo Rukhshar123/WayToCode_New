@@ -67,7 +67,7 @@
 
     <!-- Start Breadcrumb
     ============================================= -->
-    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/21.jpg' %});">
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/2.png' %});">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -84,52 +84,45 @@
 
     <!-- Start web development
     ============================================= -->
+    {% for i in design %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{% static 'assets/img/main services/web design1.jpg' %}" alt="Thumb">
                     </div>
                     <div class="col-md-6 info">
                         <h2>Web Designing</h2>
-                        <p>
-                           Our web design company provides the most creative & unique web designs which can help you to earn potential customers at a first look. All our creative, innovative and professional website designing are according to the web standards using CSS, W3C compliance and SEO friendly.
-                        </p>
-                        <p>
-                            When it comes to show-off business, a well-crafted Website Design seems to play an important role. We are specialized in designing creative user centric websites customized to your business goals & targeted niche. All our creative, innovative and professional website designing are according to the web standards using CSS, W3C compliance and SEO friendly.
-                        </p>
-
+                        <p>{{i.description_first}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End web development -->
 
     <!-- Start web development
     ============================================= -->
+    {% for i in design %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 pull-right ">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{% static 'assets/img/main services/web design2.jpg' %}" alt="Thumb">
                     </div>
                     <div class="col-md-6 info">
-                        <p>
-                            In this Digital Marketing generation, having a new web site may be a good way for your business to attach with new customers either domestic or international. Our adroit developers know their work, pouring over a plethora of hours of work to fulfill more than our clients requirement. Our web developers have proven the best-in-class user experienced work which is highly appreciated by our clients.
-                        </p>
-                        <p>
-                            As standard, our web designs are fully responsive and optimized for different screen sizes, so look and work perfectly on any device. Way To Technologies is a platform from where you can achieve your targeted audience with help of all our creative, innovative and professional website designing. We offered web design services like : - E-Commerce Website Design - Static Website Design - Dynamic Website Design - Flash Website Design - Content sites Design
-                        </p>
+                        <p>{{i.description_second}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End web development -->
 
     <!-- Start web devlopment technologies
@@ -148,10 +141,9 @@
                     <div class="item">
                         <div class="col-md-5">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/courses/f1.jpg' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/main services/graphic-ui.png' %}" height="483px;" alt="Thumb">
                                 <div class="live-view">
                                     <a href="assets/img/courses/f1.jpg" class="item popup-link">
-                                        <i class="fa fa-camera"></i>
                                     </a>
                                 </div>
                             </div>
@@ -190,10 +182,9 @@
                     <div class="item">
                         <div class="col-md-5">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/courses/f2.jpg' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/main services/graphic-design.jpg' %}" height="483px;" alt="Thumb">
                                 <div class="live-view">
-                                    <a href="assets/img/courses/f2.jpg" class="item popup-link">
-                                        <i class="fa fa-camera"></i>
+                                    <a href="assets/img/courses/main services/graphic-design.jpg" class="item popup-link">
                                     </a>
                                 </div>
                             </div>
@@ -230,10 +221,9 @@
                     <div class="item">
                         <div class="col-md-5">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/courses/f2.jpg' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/main services/angularjs.jpg' %}" alt="Thumb" height="483px;">
                                 <div class="live-view">
-                                    <a href="assets/img/courses/f2.jpg" class="item popup-link">
-                                        <i class="fa fa-camera"></i>
+                                    <a href="assets/img/main services/angularjs.jpg" class="item popup-link">
                                     </a>
                                 </div>
                             </div>
@@ -273,10 +263,9 @@
                      <div class="item">
                         <div class="col-md-5">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/courses/f2.jpg' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/main services/reactjs.png' %}" alt="Thumb" height="483px;">
                                 <div class="live-view">
-                                    <a href="assets/img/courses/f2.jpg" class="item popup-link">
-                                        <i class="fa fa-camera"></i>
+                                    <a href="assets/img/main services/reactjs.png" class="item popup-link">
                                     </a>
                                 </div>
                             </div>

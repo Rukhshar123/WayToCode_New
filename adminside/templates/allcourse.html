@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/images/favicon.png' %}">
-    <title>Way To Code - All Technology </title>
+    <title>Way To Code - All Course </title>
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="{% static 'assets/extra-libs/multicheck/multicheck.css' %}">
     <link href="{% static 'assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css' %}" rel="stylesheet">
@@ -62,12 +62,12 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
-                        <h4 class="page-title">All Technology</h4>
+                        <h4 class="page-title">All Course</h4>
                         <div class="ml-auto text-right">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">All Technology</li>
+                                    <li class="breadcrumb-item active" aria-current="page">All Course</li>
                                 </ol>
                             </nav>
                         </div>
@@ -88,30 +88,26 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">All Technology</h5>
+                                <h5 class="card-title">All Reviews</h5>
                                 <div class="table-responsive">
                                     <table id="zero_config" class="table table-striped table-bordered">
                                         <thead>
                                             <tr>
                                                 <th>Name</th>
-                                                <th>Desciption first</th>
-                                                <th>Desciption Second</th>
-                                                <th>Image1</th>
-                                                <th>Image2</th>
+                                                <th>Duration</th>
+                                                <th>Image</th>
                                                 <th>Edit</th>
                                                 <th>Delete</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        {% for i in technology %}
+                                        {% for i in course %}
                                             <tr>
                                                 <td>{{i.name}}</td>
-                                                <td>{{i.description_first}}</td>
-                                                <td>{{i.description_second}}</td>
-                                                <td><img src="{{i.image1.url}}" height="150px;"></td>
-                                                <td><img src="{{i.image2.url}}" height="150px;"></td>
-                                                <td><a href="edittechnology/{{i.id}}"> <button type="submit" class="btn btn-cyan btn-sm">Edit</button></a></td>
-                                                <td><a href="deletetechnology/{{i.id}}"><button type="submit" class="btn btn-danger btn-sm">Delete</button></a></td>
+                                                <td>{{i.duration}}</td>
+                                                <td><img src="{{i.image.url}}" style="height:100px; width:100px"></td>
+                                                <td><a href="editcourse/{{i.id}}"> <button type="submit" class="btn btn-cyan btn-sm">Edit</button></a></td>
+                                                <td><a href="deletecourse/{{i.id}}"><button type="submit" class="btn btn-danger btn-sm">Delete</button></a></td>
                                             </tr>
                                          {% endfor %}
                                         </tbody>

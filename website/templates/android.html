@@ -67,7 +67,7 @@
 
     <!-- Start Breadcrumb
     ============================================= -->
-    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/21.jpg' %});">
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/2.png' %});">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -84,61 +84,45 @@
 
     <!-- Start Asp.net development
     ============================================= -->
+    {% for i in android %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{{i.image1.url}}" height="400px;" alt="Thumb">
                     </div>
                     <div class="col-md-6 info">
-                        <h2>Android Development</h2>
-                        <p>
-                          We have an experience and expert team to take care of Android development. Our best and expert developers have succeeded in creating the most difficult Apps in Android. We have been successful in creating many applications in Android.
-                        </p>
-                        <p>
-                            Our Android app development can help you to develop mobile app, which helps you to develop secure business customers.
-                        </p>
-                         <p>
-                             Our team breaks through each observatory and moves forward and keeps working in a systematic and analyzed way, which gives you an idea of which direction your project is going and your vision is clear.
-                         </p>
-
+                        <h2>{{i.name}}</h2>
+                        <p>{{i.description_first}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End Asp.net development -->
 
     <!-- Start Asp.net development
     ============================================= -->
+    {% for i in android %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 pull-right ">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{{i.image2.url}}" height="483px;" alt="Thumb">
                     </div>
                     <div class="col-md-6 info">
-                       <p>
-                           Android  also most popular language in 2021  it is based on linux based operating system it is designed primarily for touch screen mobile devices such as smartphones and tablet computers.
-                       </p>
-                        <p>
-                            Android is a powerful operating system and it supports large number of application in smartphones. these application are more comfortable and advanced for users.
-                        </p>
-                       <p>
-                           Kotlin is a modern statically typed programming language used by over 60% of professional Android developers that helps boost productivity, developer satisfaction, and code safety. Kotlin programming language is an open-source technology used mostly for native Android mobile development, but not only.
-                       </p>
-                        <p>
-                            Flutter technology is the mobile app SDK to build high performance, high fidelity, apps for iOS and android both platforms from the single codebase. The mobile apps developed by using the flutter app development are one of the easiest and faster ways in comparison to the applications built on other app development platform
-                        </p>
+                        <p>{{i.description_second}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End Asp.net development -->
 
 
@@ -148,9 +132,6 @@
         <div class="container">
             <div class="row">
                 <div class="about-info">
-                    <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
-                    </div>
                     <div class="col-md-6 info">
                         <div id="featured-courses" class="featured-courses-area left-details default-padding">
                          <div class="container">
@@ -162,7 +143,7 @@
                                      <div class="thumb">
                                         </div>
                                   </div>
-                        <div class="col-md-6 info">
+                        <div class="col-md-12 info">
                             <h2>
                                 <a href="#">BENEFITS OF ANDROID</a>
                             </h2>

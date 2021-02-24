@@ -1,68 +1,93 @@
 from django.shortcuts import render
+from .models import *
 
 def webindex(request):
-    return render(request,'webindex.html')
+    service = Service.objects.all
+    possibility = MaximumPossibilities.objects.all
+    review = Reviews.objects.all
+    return render(request,'webindex.html',{'service':service,'possibility':possibility,'review':review})
 
 def webabout(request):
-    return render(request,'webabout.html')
+    team = Team.objects.all
+    port = Portfolio.objects.all
+    return render(request,'webabout.html',{'team':team,'port':port})
 
 def webDevelopment(request):
-    return render(request, 'webdevelopment.html')
+    web = Service.objects.filter(name='Web Development')
+    #print(web)
+    return render(request, 'webdevelopment.html',{'web':web})
 
 def appDevelopment(request):
-    return render(request, 'appdevelopment.html')
+    app = Service.objects.filter(name='App Development')
+    return render(request, 'appdevelopment.html',{'app':app})
 
 def webDesigning(request):
-    return render(request, 'designservices.html')
+    design = Service.objects.filter(name='Design Services')
+    return render(request, 'designservices.html',{'design':design})
 
 def digitalMarketing(request):
-    return render(request, 'digitalmarketing.html')
+    marketing = Service.objects.filter(name='Digital Marketing')
+    return render(request, 'digitalmarketing.html',{'marketing':marketing})
 
 def testing(request):
-    return render(request, 'testing.html')
+    testing = Service.objects.filter(name='QA & Testing')
+    return render(request, 'testing.html',{'testing':testing})
 
 def portfolio(request):
-    return render(request, 'portfolio.html')
+    port = Portfolio.objects.all
+    return render(request, 'portfolio.html',{'port':port})
 
 def ceo(request):
     return render(request, 'ceo.html')
 
 def career(request):
-    return render(request, 'career.html')
+    career = Career.objects.all()
+    return render(request, 'career.html',{'career':career})
 
 def webcontact(request):
     return render(request, 'webcontact.html')
 
 def aspnetTechnology(request):
-    return render(request, 'asp.net.html')
+    asp = Technology.objects.filter(name='ASP .NET Development')
+    return render(request, 'asp.net.html',{'asp':asp})
 
 def pythonTechnology(request):
-    return render(request, 'python.html')
+    python = Technology.objects.filter(name='Python Development')
+    return render(request, 'python.html',{'python':python})
 
 def javaTechnology(request):
-    return render(request, 'java.html')
+    java = Technology.objects.filter(name='Java Development')
+    return render(request, 'java.html',{'java':java})
 
 def phpTechnology(request):
-    return render(request, 'php.html')
+    php = Technology.objects.filter(name='PHP Development')
+    return render(request, 'php.html',{'php':php})
 
 def androidTechnology(request):
-    return render(request, 'android.html')
+    android = Technology.objects.filter(name='Android Development')
+    return render(request, 'android.html',{'android':android})
 
 def iosTechnology(request):
-    return render(request, 'ios.html')
+    ios = Technology.objects.filter(name='IOS Development')
+    return render(request, 'ios.html',{'ios':ios})
 
 def angularjsTechnology(request):
-    return render(request, 'angularjs.html')
+    angular = Technology.objects.filter(name='AngularJS Development')
+    return render(request, 'angularjs.html',{'angular':angular})
 
 def nodejsTechnology(request):
-    return render(request, 'nodejs.html')
+    node = Technology.objects.filter(name='NodeJS Development')
+    return render(request, 'nodejs.html',{'node':node})
 
 def reactjsTechnology(request):
-    return render(request, 'reactjs.html')
+    react = Technology.objects.filter(name='ReactJS Development')
+    return render(request, 'reactjs.html',{'react':react})
 
 def rorTechnology(request):
-    return render(request, 'ror.html')
+    ror = Technology.objects.filter(name='Ruby On Rails Development')
+    return render(request, 'ror.html',{'ror':ror})
 
 def golangTechnology(request):
-    return render(request, 'golang.html')
+    golang = Technology.objects.filter(name='GOLANG Development')
+    return render(request, 'golang.html',{'golang':golang})
 

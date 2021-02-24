@@ -67,7 +67,7 @@
 
     <!-- Start Breadcrumb
     ============================================= -->
-    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/21.jpg' %});">
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/2.png' %});">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -84,55 +84,45 @@
 
     <!-- Start web development
     ============================================= -->
+    {% for i in marketing %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{% static 'assets/img/main services/digitalmarketing1.jpg' %}" alt="Thumb" height="400px;">
                     </div>
                     <div class="col-md-6 info">
                         <h2>Digital Marketing</h2>
-                        <p>
-                           If you are looking for a reliable digital marketing & SEO company for your next project, Hire Experts like us. Our expert team members provide the best services for your organization.  Your work & time is precious for us & we ensure it is built by our experts.
-                        </p>
-                        <p>
-                            Digital marketing is the process of marketing by tracking new traffics, leads, sales of your products and services and by using it you can take decision how to increase consumers of your products.It is digital and online based marketing by using devices like mobile phones, laptops etc to promot companies products.
-                        </p>
-
-
+                        <p>{{i.description_first}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End web development -->
 
     <!-- Start web development
     ============================================= -->
+    {% for i in marketing %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 pull-right ">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{% static 'assets/img/main services/digital marketing.png' %}" alt="Thumb">
                     </div>
                     <div class="col-md-6 info">
-                        <p>
-                            Digital marketing, specifically, refers to 'Achieving marketing objectives through applying digital technologies and media.'
-                        </p>
-                        <p>
-                             in marketing is to make the right offer at the right time and in the right place. Today, your customers are online: hanging out in social media, staying updated on news sites and blogs, and searching online when they have a need.
-
-Digital marketing puts you in those same channels, so your best prospects can see you, learn more about you, and even ask questions to learn more about you and your products or services. At DigitalMarketer, our objective is to clear the confusion about the tactics that work and how to use them to grow your business. We stand firmly against the so-called "gurus" who promote the next "shiny object" or "quick fix" that will reportedly kill email marketing, digital advertising, or search engine optimization.
-                        </p>
+                        <p>{{i.description_second}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End web development -->
 
     <!-- Start web devlopment technologies
@@ -151,10 +141,9 @@ Digital marketing puts you in those same channels, so your best prospects can se
                     <div class="item">
                         <div class="col-md-5">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/courses/f1.jpg' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/main services/seo1.gif' %}" alt="Thumb">
                                 <div class="live-view">
-                                    <a href="assets/img/courses/f1.jpg" class="item popup-link">
-                                        <i class="fa fa-camera"></i>
+                                    <a href="assets/img/main services/seo1.gif" class="item popup-link">
                                     </a>
                                 </div>
                             </div>
@@ -193,10 +182,9 @@ Digital marketing puts you in those same channels, so your best prospects can se
                     <div class="item">
                         <div class="col-md-5">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/courses/f2.jpg' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/main services/digimarketing.jpg' %}" alt="Thumb" height="483px;">
                                 <div class="live-view">
-                                    <a href="assets/img/courses/f2.jpg" class="item popup-link">
-                                        <i class="fa fa-camera"></i>
+                                    <a href="assets/img/main services/digimarketing.jpg" class="item popup-link">
                                     </a>
                                 </div>
                             </div>
@@ -236,9 +224,9 @@ Digital marketing puts you in those same channels, so your best prospects can se
                     <div class="item">
                         <div class="col-md-5">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/courses/f2.jpg' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/main services/content.jpg' %}" height="483px;" alt="Thumb">
                                 <div class="live-view">
-                                    <a href="assets/img/courses/f2.jpg" class="item popup-link">
+                                    <a href="assets/img/main services/content.jpg" class="item popup-link">
                                         <i class="fa fa-camera"></i>
                                     </a>
                                 </div>

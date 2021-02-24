@@ -67,7 +67,7 @@
 
     <!-- Start Breadcrumb
     ============================================= -->
-    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/21.jpg' %});">
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url({% static 'assets/img/banner/2.png' %});">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -84,52 +84,45 @@
 
     <!-- Start web development
     ============================================= -->
+    {% for i in app %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 thumb">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{% static 'assets/img/main services/app development.png' %}" alt="Thumb" height="400px;">
                     </div>
                     <div class="col-md-6 info">
                         <h2>App Development</h2>
-                        <p>
-                           Our core solution is Mobile app development with Android, iOS and flutter. We are building the robust Android applications that help your business to grow exponentially. We are here for you with Custom Android Apps, Development Web-based Apps, Cloud-Based Solutions, Support & Maintenance.
-                        </p>
-                        <p>
-                            Way To Code Technologies is the best Mobile app development company in India, we are helping to build robust Android applications that help your business to grow exponentially.
-                        </p>
-
+                        <p>{{i.description_first}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End web development -->
 
     <!-- Start web development
     ============================================= -->
+    {% for i in app %}
     <div class="about-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="about-info">
                     <div class="col-md-6 pull-right ">
-                        <img src="{% static 'assets/img/about.jpg' %}" alt="Thumb">
+                        <img src="{% static 'assets/img/main services/app development2.jpeg' %}" alt="Thumb">
                     </div>
                     <div class="col-md-6 info">
-                        <p>
-                            We are an Ahmedabad based IT company, we have really new and best competitive ideas to boost your business with presence market strategies and requirements. We have a very skilled, trained and a quick responsive team who is always ready to give the best of our services to your requirements.
-                        </p>
-                        <p>
-                            We all know that market requirement is quick and rapid growth with connectivity through mobile application is the best solution for you to get in touch with your market presence.
-                        </p>
+                        <p>{{i.description_second}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    {% endfor %}
     <!-- End web development -->
 
     <!-- Start web devlopment technologies
@@ -148,10 +141,10 @@
                     <div class="item">
                         <div class="col-md-5">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/courses/f1.jpg' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/main services/android.png' %}" alt="Thumb">
                                 <div class="live-view">
                                     <a href="assets/img/courses/f1.jpg" class="item popup-link">
-                                        <i class="fa fa-camera"></i>
+
                                     </a>
                                 </div>
                             </div>
@@ -190,10 +183,9 @@
                     <div class="item">
                         <div class="col-md-5">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/courses/f2.jpg' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/main services/flutter.png' %}" alt="Thumb" height="400px;">
                                 <div class="live-view">
-                                    <a href="assets/img/courses/f2.jpg" class="item popup-link">
-                                        <i class="fa fa-camera"></i>
+                                    <a href="assets/img/main services/flutter.png" class="item popup-link">
                                     </a>
                                 </div>
                             </div>
@@ -230,10 +222,9 @@
                     <div class="item">
                         <div class="col-md-5">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/courses/f2.jpg' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/main services/ios.jpg' %}" alt="Thumb">
                                 <div class="live-view">
-                                    <a href="assets/img/courses/f2.jpg" class="item popup-link">
-                                        <i class="fa fa-camera"></i>
+                                    <a href="assets/img/main services/ios.jpg" class="item popup-link">
                                     </a>
                                 </div>
                             </div>
