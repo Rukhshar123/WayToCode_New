@@ -17,7 +17,7 @@
 
                     <div class="slider-overlay"></div>
                     <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
-                    <img src="{% static 'images/banner/Training1.jpg' %}" alt="Sky" class="rev-slidebg"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <img src="{% static 'images/banner/new banner/1.jpg' %}" alt="Sky" class="rev-slidebg"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                     <!-- LAYER NR. 1 -->
                     <div class="tp-caption font-lora sfb tp-resizeme letter-space-5 h-p"
                         data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -162,7 +162,7 @@
                         data-paddingbottom="[10,10,10,10]"
                         data-paddingleft="[0,0,0,0]"
 
-                        style="z-index: 5; font-family:'Roboto', sans-serif; font-weight: 700; white-space: nowrap;text-transform:left;">Take The First Step To
+                        style="z-index: 5; font-family:'Roboto', sans-serif; font-weight: 700; white-space: nowrap;text-transform:left;">An ISO Certified
                     </div>
 
                     <!-- LAYER NR.3 -->
@@ -184,7 +184,7 @@
                         data-paddingbottom="[10,10,10,10]"
                         data-paddingleft="[0,0,0,0]"
 
-                        style="z-index: 5; font-family:'Roboto', sans-serif; font-weight: 700; white-space: nowrap;text-transform:left;">Knowledge With Us.
+                        style="z-index: 5; font-family:'Roboto', sans-serif; font-weight: 700; white-space: nowrap;text-transform:left;">Training Provider.
                     </div>
 
                         <!-- LAYER NR. 4 -->
@@ -295,58 +295,16 @@ Working on a real project is a big thing in today's world. The training institut
 			</div>
 		</div>
 		<div class="row">
+            {% for i in training %}
 			<div class="col-12 col-sm-6 col-md-4 col-lg-4 single_features_wrapper">
-				<div class="feature_single feature_single_1">
-					<img src="{% static 'images/features/live_training.jpg' %}" style="height:280px;" alt="">
+				<div class="feature_single ">
+					<img src="{{i.image.url}}" style="height:280px;" alt="">
 					<div class="feature_content">
-						<a href="#" title=""><h3>Live Training</h3></a>
+						<a href="{{i.link}}" title=""><h3>{{i.name}}</h3></a>
 					</div>
 				</div>
 			</div>
-
-			<div class="col-12 col-sm-6 col-md-4 col-lg-4 single_features_wrapper">
-				<div class="feature_single feature_single_2">
-					<img src="{% static 'images/features/college_internship_course.png' %}" style="height:280px;" alt="">
-					<div class="feature_content">
-						<a href="#" title=""><h3>College Internship</h3></a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-12 col-sm-6 col-md-4 col-lg-4 single_features_wrapper">
-				<div class="feature_single feature_single_3">
-					<img src="{% static 'images/features/college_project_course.jpg' %}" style="height:280px;" alt="">
-					<div class="feature_content">
-						<a href="#" title=""><h3>College Project</h3></a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-12 col-sm-6 col-md-4 col-lg-4 single_features_wrapper">
-				<div class="feature_single feature_single_4">
-					<img src="{% static 'images/features/industrial_training_course.jpg' %}" alt="" style="height:280px;">
-					<div class="feature_content">
-						<a href="#" title=""><h3>Indusrial Training</h3></a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-12 col-sm-6 col-md-4 col-lg-4 single_features_wrapper">
-				<div class="feature_single feature_single_5">
-					<img src="{% static 'images/features/online_training_course.jpg' %}" style="height:280px;" alt="">
-					<div class="feature_content">
-						<a href="#" title=""><h3>Online Training</h3></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 col-sm-6 col-md-4 col-lg-4 single_features_wrapper">
-				<div class="feature_single feature_single_6">
-					<img src="{% static 'images/features/job_oriented_courses.jpg' %}" style="height:280px;" alt="">
-					<div class="feature_content">
-						<a href="#" title=""><h3>Job Oriented Training</h3></a>
-					</div>
-				</div>
-			</div>
+            {% endfor %}
 
 		</div>
 	</div>
@@ -404,45 +362,25 @@ Working on a real project is a big thing in today's world. The training institut
             <div class="col-12 col-sm-12 col-md-12 col-lg-8">
                 <div class="testimonial_text_wrapper">
                     <div class="carousel_text slider-for">
+                        {% for i in review %}
                         <div>
                             <div class="single_box wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
                                 <p>My experience with Way to Code is very joyfull. Highly Experience staff and motivating environment.</p>
                             </div>
                         </div>
-                        <div>
-                            <div class="single_box wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
-                                <p>Actually what i found wonderful is the person who teaches and manages this company is having 9+ years of experience so he is just amazing. As a college student i have to manage my time so i don't have much time but sir here always teaches me in my comfortable time and always helps me in every problem. So i will recommend u all to come here for any software related courses as the fees is also very affordable and service is great.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="single_box wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
-                                <p>very good place for learning all technologies , they have experienced trainners and friendly environment..</p>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                     <div class="reviewer_info">
                         <div class="carousel_images slider-nav">
+                            {% for i in review %}
                             <div class="restimonial_single_img">
-                                <img src="{% static 'images/team/student_icon.jpg' %}" alt="2" class="img-fluid">
+                                <img src="{{i.image.url}}" alt="2" class="img-fluid">
                                 <div class="name_position">
-                                    <span class="name">Vishal Taily</span>
-                                    <span>Android Developer</span>
+                                    <span class="name">{{i.name}}</span>
+                                    <span>{{i.designation}}</span>
                                 </div>
                             </div>
-                            <div class="restimonial_single_img">
-                                <img src="{% static 'images/team/student_icon_2.png' %}" alt="2" class="img-fluid ">
-                                <div class="name_position">
-                                    <span class="name">Kush Bhatia</span>
-                                    <span>Android Developer</span>
-                                </div>
-                            </div>
-                            <div class="restimonial_single_img ">
-                                <img src="{% static 'images/team/student_icon_3.png' %}" alt="2" class="img-fluid">
-                                <div class="name_position">
-                                    <span class="name">Ranjan Anjara</span>
-                                    <span>Python Developer</span>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
@@ -462,48 +400,22 @@ Working on a real project is a big thing in today's world. The training institut
                     <h2>Our Latest Blog</h2>
                 </div><!-- ends: .section-header -->
             </div>
+            {% for i in blog %}
             <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                  <div class="single_item single_item_first">
                     <div class="blog-img">
-                        <a href="#" title=""><img src="{% static 'images/blog/Python_blog.jpg' %}" alt="" class="img-fluid" style="height: 400px; width: 500px;"></a>
+                        <a href="#" title=""><img src="{{i.image.url}}" alt="" class="img-fluid" style="height: 400px; width: 500px;"></a>
                     </div>
                     <div class="blog_title">
-                        <span>Python Development</span>
-                        <h3><a href="#" title="">How to Become Master In Python Developement</a></h3>
+                        <span>{{i.technology}}</span>
+                        <h3><a href="#" title="">{{i.header}}</a></h3>
                         <div class="post_bloger">
-                            <span>15/01/2021 - By </span> <span class="bloger_name">Rukhshar Mirza</span>
+                            <span>{{i.date}} - By </span> <span class="bloger_name">{{i.name}}</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="single_item single_item_center">
-                     <div class="blog-img">
-                        <a href="#" title=""><img src="{% static 'images/blog/Android_blog.jpg' %}" alt="" class="img-fluid" style="height: 400px; width: 500px;"></a>
-                    </div>
-                    <div class="blog_title">
-                        <span>Android Development</span>
-                        <h3><a href="#" title="">Mobile Application Developement.</a></h3>
-                        <div class="post_bloger">
-                            <span>15/01/2021 - By </span> <span class="bloger_name">Nikita Patel</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-               <div class="single_item single_item_last">
-                     <div class="blog-img">
-                        <a href="#" title=""><img src="{% static 'images/blog/Java_blog.png' %}" alt="" class="img-fluid" style="height: 400px; width: 500px;"></a>
-                    </div>
-                    <div class="blog_title">
-                        <span>Java Development</span>
-                        <h3><a href="#" title="">What carrer path should I take<br>To become a Java Developer</a></h3>
-                        <div class="post_bloger">
-                            <span>15/01/2021 - By </span> <span class="bloger_name">Vinod Sonava</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section><!-- End Blog  -->

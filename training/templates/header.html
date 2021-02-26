@@ -15,6 +15,11 @@
         						<li><i class="flaticon-mail-black-envelope-symbol"></i>info@waytocode.in</li>
         					</ul>
                         </div>
+                        <div class="contact_info">
+        					<ul class="list-unstyled">
+        						<li><i class="flaticon-mail-black-certificate-symbol"></i>ISO 9001:2015 Certified</li>
+        					</ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -24,29 +29,22 @@
     <div class="edu_nav">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light bg-faded">
-                <a class="navbar-brand" href="index-2.html"><img src="{% static 'images/logo.png' %}" alt="logo"></a>
+                <a class="navbar-brand" href="index-2.html"><img src="{% static 'images/logo2.png' %}" alt="logo"></a>
                 <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav nav lavalamp ml-auto menu">
                         <li class="nav-item"><a href="{% url 'index' %}" class="nav-link active">Home</a>
                         </li>
                         <li class="nav-item"><a href="{% url 'about_training' %}" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="{% url 'livetraining' %}" class="nav-link">Courses</a>
+                        <li class="nav-item"><a href="" class="nav-link">Courses</a>
                             <ul class="navbar-nav nav mx-auto">
-                                <li class="nav-item"><a href="{% url 'livetraining' %}" class="nav-link">Live Training</a></li>
-                                <li class="nav-item"><a href="{% url 'collegeinternship' %}" class="nav-link">College Internship</a></li>
-                                <li class="nav-item"><a href="{% url 'collegeproject' %}" class="nav-link">College Project</a></li>
-                                <li class="nav-item"><a href="{% url 'industrialtraining' %}" class="nav-link">Industrial Training</a></li>
-                                <li class="nav-item"><a href="{% url 'onlinetraining' %}" class="nav-link">Online Training</a></li>
-                                <li class="nav-item"><a href="{% url 'joboriented' %}" class="nav-link">Job-Oriented Training</a></li>                            </ul>
+                                <li class="nav-item"><a href="{% url 'trainingwebdevelopment' %}" class="nav-link">Web Development</a></li>
+                                <li class="nav-item"><a href="{% url 'trainingappdevelopment' %}" class="nav-link">App Development</a></li>
+                                <li class="nav-item"><a href="{% url 'trainingdigimarketing' %}" class="nav-link">Digital Marketing</a></li>
+                                <li class="nav-item"><a href="{% url 'trainingwebdesigning' %}" class="nav-link">Web Designing</a></li>
+                                <li class="nav-item"><a href="{% url 'trainingtesting' %}" class="nav-link">Software Testing</a></li>
+                                <li class="nav-item"><a href="{% url 'advancecourses' %}" class="nav-link">Advance Courses</a></li>                            </ul>
                         </li>
                         <li class="nav-item"><a href="{% url 'blogs' %}" class="nav-link">Blog</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Tutorials</a>
-                            <ul class="navbar-nav nav mx-auto">
-                                <li class="nav-item"><a href="{% url 'C_home' %}" class="nav-link">C Language</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">C++ Language</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">SQL Database</a></li>
-                            </ul>
-                        </li>
                         <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
                     </ul>
                 </div>

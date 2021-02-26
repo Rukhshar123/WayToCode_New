@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import *
 
 def webindex(request):
@@ -45,6 +45,16 @@ def career(request):
     return render(request, 'career.html',{'career':career})
 
 def webcontact(request):
+    if request.method == 'POST':
+        name = request.POST['name']
+        email = request.POST['email']
+        phone = request.POST['phone']
+        desc = request.POST['comments']
+
+        obj = Contact(name=name,email=email,phone=phone,description=desc)
+        obj.save()
+        return redirect('webcontact')
+
     return render(request, 'webcontact.html')
 
 def aspnetTechnology(request):

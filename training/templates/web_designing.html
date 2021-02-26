@@ -1,0 +1,148 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    {% include 'links.html' %}
+</head>
+<body>
+<header class="header_inner become_a_teacher">
+<!-- Preloader -->
+{% include 'header.html' %}
+
+    <div class="intro_wrapper">
+        <div class="container">
+            <div class="row">
+                 <div class="col-sm-12 col-md-8 col-lg-8">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header> <!-- End header -->
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<section class="cources_highlight">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="latest_blog_carousel">
+                     <div class="single_item single_item_first">
+                        <div class="blog-img">
+                            <a href="#"><img src="{% static 'images/features/training_team.jpg' %}" alt="" class="img-fluid" style="height:280px;"></a>
+                        </div>
+                        <div class="blog_title">
+                            <span>Get Trained by</span>
+                            <h3><a href="#" title="">Our Skilled Team</a></h3>
+                            <p>You will be trained by our skilled experts who have a great experience of working in the real world and get</p><strong>"100% placement"</strong>
+                        </div>
+                    </div>
+
+                    <div class="single_item single_item_center">
+                        <div class="blog-img">
+                            <a href="#" title=""><img src="{% static 'images/features/features_2.jpg' %}" alt="" class="img-fluid"></a>
+                        </div>
+                        <div class="blog_title">
+                            <span>Work On</span>
+                            <h3><a href="#" title="">Live Projects</a></h3>
+                            <p>
+Working on a real project is a big thing in today's world. The training institute will never give you the experience to work on a live project, but we are an IT comapny, so we will give you that experience.</p>
+                        </div>
+                    </div>
+
+                   <div class="single_item single_item_last">
+                        <div class="blog-img">
+                            <a href="#" title=""><img src="{% static 'images/features/one_to_one.jpg' %}" alt="" class="img-fluid" style="height:280px;"></a>
+                        </div>
+                        <div class="blog_title">
+                            <span>Get Industrial</span>
+                            <h3><a href="#" title="">One to one Training</a></h3>
+                            <p>We will not teach you to keep it with many students. We give you one to one training, so you can understand freely and you will get </p><strong>"Life Time Free Validity"</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Login Signup Option -->
+
+
+<section class="courses_features">
+	<div class="container">
+		<div class="row d-flex justify-content-center">
+			<div class="col-12 col-sm-12 col-md-9 col-lg-9">
+				<div class="sub_title">
+					<h2>Web Designing Technologies</h2>
+				</div><!-- ends: .section-header -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-4 col-lg-4 single_features_wrapper">
+				<div class="feature_single feature_single_1">
+					<img src="{% static 'images/training/graphic-ui.png' %}" height="400px;" alt="">
+					<div class="feature_content">
+						<a href="{% url 'trainingui' %}" title=""><h3>UI/UX/Graphic Design</h3></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-sm-6 col-md-4 col-lg-4 single_features_wrapper">
+				<div class="feature_single feature_single_2">
+					<img src="{% static 'images/training/angularjs.jpg' %}" height="400px;" alt="">
+					<div class="feature_content">
+						<a href="{% url 'trainingangular' %}" title=""><h3>Angular JS</h3></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-sm-6 col-md-4 col-lg-4 single_features_wrapper">
+				<div class="feature_single feature_single_3">
+					<img src="{% static 'images/training/reactjs.png' %}" height="400px;" alt="">
+					<div class="feature_content">
+						<a href="{% url 'trainingreact' %}" title=""><h3>React JS</h3></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>  <!-- End Courses Features -->
+
+<!-- Footer -->
+{% include 'footer.html' %}<!-- End Footer -->
+
+<section id="scroll-top" class="scroll-top">
+    <h2 class="disabled">Scroll to top</h2>
+    <div class="to-top pos-rtive">
+        <a href="#"><i class = "flaticon-right-arrow"></i></a>
+    </div>
+</section>
+
+    <!-- JavaScript -->
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <script src="{% static 'js/jquery.meanmenu.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <!-- Counter Script -->
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+
+    <!-- =========================================================
+         STYLE SWITCHER | ONLY FOR DEMO NOT INCLUDED IN MAIN FILES
+    ============================================================== -->
+    <script type="text/javascript" src="{% static 'js/demo.js' %}"></script>
+
+</body>
+
+
+</html>

@@ -43,6 +43,12 @@ class Career(models.Model):
     job_responsibilities = RichTextField(blank=True, null=True)
     benefits = RichTextField(blank=True, null=True)
 
+class Contact(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    phone = models.IntegerField(max_length=12)
+    description = models.TextField()
+
 
 
 

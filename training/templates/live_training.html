@@ -72,97 +72,7 @@ Working on a real project is a big thing in today's world. The training institut
 </section>
 
 
-
-<section class="login_signup_option">
-    <div class="l-modal is-hidden--off-flow js-modal-shopify">
-        <div class="l-modal__shadow js-modal-hide"></div>
-        <div class="login_popup login_modal_body">
-            <div class="Popup_title d-flex justify-content-between">
-                <h2 class="hidden">&nbsp;</h2>
-                <!-- Nav tabs -->
-                <div class="row">
-                    <div class="col-12 col-lg-12 col-md-12 col-lg-12 login_option_btn">
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#login" role="tab">Login</a></li>
-                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#panel2" role="tab">Register</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-lg-12 col-md-12 col-lg-12">
-                        <!-- Tab panels -->
-                        <div class="tab-content card">
-                            <!--Login-->
-                            <div class="tab-pane fade in show active" id="login" role="tabpanel">
-                                <form action="#">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
-                                            <div class="form-group">
-                                                <label class="control-label">Email</label>
-                                                <input type="email" class="form-control" placeholder="Username">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
-                                            <div class="form-group">
-                                                <label class="control-label">Password</label>
-                                                <input type="password" class="form-control" placeholder="Password">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12 d-flex justify-content-between login_option">
-                                            <a href="forgot-password.html" title="" class="forget_pass">Forget Password ?</a>
-                                            <button type="submit" class="btn btn-default login_btn">Login</button>
-                                        </div>
-                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
-                                            <div class="social_login">
-                                                <div class="social_items">
-                                                    <button class="google_login google">Login Google</button>
-                                                    <button class="google_login facebook">Login Facebook</button>
-                                                    <button class="google_login twitter">Login Twitter</button>
-                                                    <button class="google_login linkdin">Login Linkdin</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <!--/.Panel 1-->
-                            <!--Panel 2-->
-                            <div class="tab-pane fade" id="panel2" role="tabpanel">
-                                <form action="#" class="register">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
-                                            <div class="form-group">
-                                                <label  class="control-label">Name</label>
-                                                <input type="text" class="form-control" placeholder="Username">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
-                                            <div class="form-group">
-                                                <label  class="control-label">Email</label>
-                                                <input type="email" class="form-control" placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12">
-                                            <div class="form-group">
-                                                <label  class="control-label">Password</label>
-                                                <input type="password" class="form-control" placeholder="Password">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 col-lg-12 col-md-12 col-lg-12 d-flex justify-content-between login_option">
-                                            <button type="submit" class="btn btn-default login_btn">Register</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div><!--/.Panel 2-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>  <!-- End Login Signup Option -->
+ <!-- End Login Signup Option -->
 
 
 
@@ -217,13 +127,16 @@ Working on a real project is a big thing in today's world. The training institut
 <section class="learn_shep">
     <div class="container">
         <div class="row">
+            {% for i in live  %}
             <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                 <div class="title">
-                    <h2>Live Training</h2>
-                    <p>Live sessions you can understand each and every content very easily. Communications between our trainers and you become very clear. You will be able to learn with trainers live and interact with them gives you a chance to learn not only the technical things but also interpersonal skills. This is lead to better success. In live sessions you can solve your doubts quickly and clear them. This is not available in recorded sessions. Live session can make you aware about the real time requirements of industry. It can increase your satisfaction rate and you can ask trainer about you confusion, so they can make you understand easily.</p>
-                    <a href="#" title="">Schedule Demo</a>
+                    <h2>{{i.name}}</h2>
+                    <p>{{i.description}}
+                    </p>
+                    <a href="{% url 'contact' %}" title="">Schedule Demo</a>
                  </div>
             </div>
+            {% endfor %}
         </div>
     </div>
     <div class="container-fluid">
@@ -231,11 +144,11 @@ Working on a real project is a big thing in today's world. The training institut
             <div class="col-12 col-sm-12 col-md-12 col-lg-7 ml-auto p-0">
                 <div class="shep_banner_wrapper">
                     <div class="step_single_banner">
-                        <img src="{% static 'images/features/features_2_1.jpg' %}" alt="" class="img-fluid">
-                        <img src="{% static 'images/features/features_2_2.jpg' %}" alt="" class="img-fluid">
+                        <img src="{% static 'images/banner/new banner/training1-01.png' %}" alt="" class="img-fluid">
+                        <img src="{% static 'images/banner/new banner/training2-01.png' %}" alt="" class="img-fluid">
                     </div>
                     <div class="step_single_banner">
-                        <img src="{% static 'images/features/features_2_3.jpg' %}" alt="" class="img-fluid">
+                        <img src="{% static 'images/banner/new banner/training3-01.png' %}" alt="" class="img-fluid">
                     </div>
                  </div>
             </div>
@@ -250,227 +163,26 @@ Working on a real project is a big thing in today's world. The training institut
                     <h2>Related Courses</h2>
                 </div><!-- ends: .section-header -->
             </div>
+            {% for i in technology %}
             <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                 <div class="single-courses">
                     <div class="courses_banner_wrapper">
-                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co1.png' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
+                        <div class="courses_banner"><a href="#"><img src="{{i.image.url}}" alt="" class="img-fluid" style="height:250px;"></a></div>
                     </div>
                     <div class="courses_info_wrapper">
                         <div class="courses_title">
-                            <h3><a href="#">C/C++</a></h3>
+                            <h3><a href="#">{{i.name}}</a></h3>
                         </div>
                         <div class="courses_info">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-user"></i>30 Days</li>
+                                <li><i class="fas fa-user"></i>{{i.duration}}</li>
                             </ul>
-                            <a href="#" class="cart_btn">Register here</a>
+                            <a href="{% url 'contact' %}" class="cart_btn">Register here</a>
                         </div>
                     </div>
                 </div><!-- Ends: .single courses -->
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="single-courses">
-                    <div class="courses_banner_wrapper">
-                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co2.jpg' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
-                    </div>
-                    <div class="courses_info_wrapper">
-                        <div class="courses_title">
-                            <h3><a href="#">PHP</a></h3>
-                        </div>
-                        <div class="courses_info">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-user"></i>180 Days</li>
-                            </ul>
-                            <a href="#" class="cart_btn">Register here</a>
-                        </div>
-                    </div>
-                </div><!-- Ends: .single courses -->
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="single-courses">
-                    <div class="courses_banner_wrapper">
-                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co3.jpg' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
-                    </div>
-                    <div class="courses_info_wrapper">
-                        <div class="courses_title">
-                            <h3><a href="#">ASP .NET</a></h3>
-                        </div>
-                        <div class="courses_info">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-user"></i>180 Days</li>
-                            </ul>
-                            <a href="#" class="cart_btn">Register here</a>
-                        </div>
-                    </div>
-                </div><!-- Ends: .single courses -->
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="single-courses">
-                    <div class="courses_banner_wrapper">
-                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co4.jpg' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
-                    </div>
-                    <div class="courses_info_wrapper">
-                        <div class="courses_title">
-                            <h3><a href="#">Python</a></h3>
-                        </div>
-                        <div class="courses_info">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-user"></i>180 Days</li>
-                            </ul>
-                            <a href="#" class="cart_btn">Register here</a>
-                        </div>
-                    </div>
-                </div><!-- Ends: .single courses -->
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="single-courses">
-                    <div class="courses_banner_wrapper">
-                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co5.jpg' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
-                    </div>
-                    <div class="courses_info_wrapper">
-                        <div class="courses_title">
-                            <h3><a href="#">JAVA</a></h3>
-                        </div>
-                        <div class="courses_info">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-user"></i>180 Days</li>
-                            </ul>
-                            <a href="#" class="cart_btn">Register here</a>
-                        </div>
-                    </div>
-                </div><!-- Ends: .single courses -->
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="single-courses">
-                    <div class="courses_banner_wrapper">
-                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co6.png' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
-                    </div>
-                    <div class="courses_info_wrapper">
-                        <div class="courses_title">
-                            <h3><a href="#">SEO & DIGITAL MARKETING</a></h3>
-                        </div>
-                        <div class="courses_info">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-user"></i>180 Days</li>
-                            </ul>
-                            <a href="#" class="cart_btn">Register here</a>
-                        </div>
-                    </div>
-                </div><!-- Ends: .single courses -->
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="single-courses">
-                    <div class="courses_banner_wrapper">
-                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co7.jpg' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
-                    </div>
-                    <div class="courses_info_wrapper">
-                        <div class="courses_title">
-                            <h3><a href="#">UI/UX</a></h3>
-                        </div>
-                        <div class="courses_info">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-user"></i>180 Days</li>
-                            </ul>
-                            <a href="#" class="cart_btn">Register here</a>
-                        </div>
-                    </div>
-                </div><!-- Ends: .single courses -->
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="single-courses">
-                    <div class="courses_banner_wrapper">
-                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co8.jpg' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
-                    </div>
-                    <div class="courses_info_wrapper">
-                        <div class="courses_title">
-                            <h3><a href="#">WEB DESIGNING</a></h3>
-                        </div>
-                        <div class="courses_info">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-user"></i>180 Days</li>
-                            </ul>
-                            <a href="#" class="cart_btn">Register here</a>
-                        </div>
-                    </div>
-                </div><!-- Ends: .single courses -->
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="single-courses">
-                    <div class="courses_banner_wrapper">
-                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co9.png' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
-                    </div>
-                    <div class="courses_info_wrapper">
-                        <div class="courses_title">
-                            <h3><a href="#">SOFTWARE TESTING</a></h3>
-                        </div>
-                        <div class="courses_info">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-user"></i>180 Days</li>
-                            </ul>
-                            <a href="#" class="cart_btn">Register here</a>
-                        </div>
-                    </div>
-                </div><!-- Ends: .single courses -->
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="single-courses">
-                    <div class="courses_banner_wrapper">
-                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co10.jpg' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
-                    </div>
-                    <div class="courses_info_wrapper">
-                        <div class="courses_title">
-                            <h3><a href="#">RUBY ON RAILS</a></h3>
-                        </div>
-                        <div class="courses_info">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-user"></i>180 Days</li>
-                            </ul>
-                            <a href="#" class="cart_btn">Register here</a>
-                        </div>
-                    </div>
-                </div><!-- Ends: .single courses -->
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="single-courses">
-                    <div class="courses_banner_wrapper">
-                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co11.png' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
-                    </div>
-                    <div class="courses_info_wrapper">
-                        <div class="courses_title">
-                            <h3><a href="#">ANGULAR JS</a></h3>
-                        </div>
-                        <div class="courses_info">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-user"></i>30 Days</li>
-                            </ul>
-                            <a href="#" class="cart_btn">Register here</a>
-                        </div>
-                    </div>
-                </div><!-- Ends: .single courses -->
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <div class="single-courses">
-                    <div class="courses_banner_wrapper">
-                        <div class="courses_banner"><a href="#"><img src="{% static 'images/courses/co12.png' %}" alt="" class="img-fluid" style="height:250px;"></a></div>
-                    </div>
-                    <div class="courses_info_wrapper">
-                        <div class="courses_title">
-                            <h3><a href="#">ORACLE/MYSQL</a></h3>
-                        </div>
-                        <div class="courses_info">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-user"></i>180 Days</li>
-                            </ul>
-                            <a href="#" class="cart_btn">Register here</a>
-                        </div>
-                    </div>
-                </div><!-- Ends: .single courses -->
-            </div>
+            {% endfor %}
             <!-- Ends: . -->
 
              <div class="pagination_blog">
