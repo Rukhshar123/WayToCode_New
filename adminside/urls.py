@@ -7,7 +7,7 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.adminLogin,name="adminlogin"),
+    path('adminlogin',views.adminLogin,name="adminlogin"),
     path('adminregister',views.adminRegister,name="adminregister"),
     path('adminhome',views.adminHome,name="adminhome"),
     path('logout',views.logout,name="logout"),
@@ -71,6 +71,8 @@ urlpatterns = [
     path('deleteblog/<int:id>',views.deleteBlog,name="deleteblog"),
     path('adminwebcontact',views.webcontact,name="adminwebcontact"),
     path('admindeletewebcontact/<int:id>',views.deletewebcontact,name="deletewebcontact"),
+    path('admintrainingcontact',views.trainingContact,name="admintrainingcontact"),
+    path('admintrainingdeletewebcontact/<int:id>',views.deleteTrainingcontact,name="admintrainingdeletewebcontact"),
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

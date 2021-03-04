@@ -27,4 +27,11 @@ class Blog(models.Model):
     name = models.CharField(max_length=100, default=None)
 
 
+class TrainingContact(models.Model):
+    name = models.CharField(max_length=100)
+    phone = models.CharField(max_length=12)
+    email = models.EmailField()
+    message = models.TextField()
+
+
 

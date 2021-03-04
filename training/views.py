@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from .models import *
 
@@ -42,6 +42,15 @@ def joborientedTraining(request):
     return render(request,'job-oriented_training.html',{'job':job,'technology':technology})
 
 def contact(request):
+    if request.method ==  'POST':
+        name = request.POST['name']
+        phone = request.POST['phone']
+        email = request.POST['email']
+        message = request.POST['message']
+
+        obj = TrainingContact(name=name,phone=phone,email=email,message=message)
+        obj.save()
+        return redirect('contact')
     return render(request, 'contact.html')
 
 def blogs(request):
